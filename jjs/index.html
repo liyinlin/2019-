@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        #conter {
+            width: 1200px;
+            margin: 30px auto 0;
+            /* background:#EFEFEF; */
+            
+        }
+
+        a {
+            color: #000;
+        }
+
+        .dynamics {
+            overflow: hidden;
+        }
+
+        .dynal {
+            float: left;
+            width: 830px;
+
+
+        }
+
+        .dynar {
+            float: right;
+            width: 345px;
+            height: 377px;
+            background: #EFEFEF;
+        }
+
+        .dytitle {
+            border-bottom: 2px solid #EFEFEF;
+            overflow: hidden;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        .lf {
+            float: left;
+        }
+
+        .lr {
+            float: right;
+        }
+
+        .spa1 {
+            background: #ec2a28;
+            color: #fff;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .titr a {
+            line-height: 38px;
+        }
+
+        .dyimg {
+            width: 304px;
+            height: 123px;
+        }
+
+        .fenx {
+            line-height: 20px;
+            margin: 0 10px;
+        }
+
+        .fenx img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+
+        }
+
+        .fenx span {
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .tils {
+            width: 500px;
+        }
+
+        .tils h3 {
+            margin: 15px 0;
+        }
+
+        .plcen {
+            margin-top: 20px;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            display: -webkit-box;
+            display: box;
+            position: relative;
+        }
+
+        .plcen a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #fff;
+        }
+
+        .mato {
+            margin: 15px 0;
+        }
+
+        .list li {
+            line-height: 45px;
+            border-bottom: 1px dashed #EFEFEF;
+            overflow: hidden;
+        }
+
+        .wids {
+            width: 535px;
+            overflow: hidden;
+            /*内容超出后隐藏*/
+            text-overflow: ellipsis;
+            /* 超出内容显示为省略号*/
+            white-space: nowrap;
+            /*文本不进行换行*/
+        }
+
+        .list .fenx {
+            margin-top: 13px;
+        }
+
+        .list a:hover {
+            color: #ec2a28
+        }
+
+        .lksd {
+            height: 40px;
+            background: rgb(218, 218, 45);
+        }
+
+        #tit {
+            height: 40px;
+            width: 80%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        #tit span {
+            float: left;
+            width: 92px;
+            height: 38px;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            background: rgb(218, 218, 45);
+            border-top: 2px solid rgb(218, 218, 45);
+            cursor: pointer;
+        }
+
+        #tit span.select {
+            background: #EFEFEF;
+            border-top: 2px solid #ec2a28;
+            color: #ec2a28;
+        }
+
+        #con .show {
+            display: block;
+        }
+
+        #con div {
+            display: none;
+            padding: 20px 15px;
+        }
+
+        #tit span .select {
+            background: rgb(218, 218, 45);
+            color: #EFEFEF;
+        }
+
+        #con li {
+            font-size: 16px;
+            width: 313px;
+            overflow: hidden;
+            /*内容超出后隐藏*/
+            text-overflow: ellipsis;
+            /* 超出内容显示为省略号*/
+            white-space: nowrap;
+            padding: 9px 0;
+        }
+
+        #con li a:hover {
+            color: #ec2a28
+        }
+
+        .wdts {
+            width: 1200px;
+            margin: 30px auto 0;
+        }
+
+        .futitle {
+            width: 100%;
+            height: 42px;
+            background: #EFEFEF;
+
+        }
+
+        .bits {
+            float: left;
+            background: #ec2a28;
+            line-height: 42px;
+            padding: 0 15px;
+        }
+
+        .bits * {
+            vertical-align: middle;
+
+        }
+
+        .cuss {
+            font-size: 16px;
+            color: #fff;
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #tits, #titss {
+            float: left;
+            margin-left: 50px;
+            height: 42px;
+        }
+
+        #tits span, #titss span {
+            float: left;
+            width: 92px;
+            height: 38px;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: #000;
+            background: #EFEFEF;
+            border-top: 2px solid #EFEFEF;
+            cursor: pointer;
+
+        }
+
+        #tits .select,#titss .select {
+            background: #fff;
+            border-top: 2px solid #ec2a28;
+            color: #000;
+        }
+
+        .wisd {
+            width: 395px;
+
+        }
+
+        .withds {
+            width: 830px;
+        }
+
+        .plcens {
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+        }
+
+        .lfcs {
+            width: 197px;
+        }
+
+        .mt20 {
+            margin-top: 20px;
+        }
+
+        .ulsd li {
+            padding: 10px 0;
+        }
+
+        .ulsd li a {
+            margin-left: 10px;
+        }
+
+        .ulsd li a:hover {
+            color: #ec2a28;
+        }
+
+        #cons .hiden,#conss .hiden {
+            display: none;
+        }
+
+        #cons .show,
+        #conss .show {
+            display: block;
+        }
+
+        .withsc {
+            width: 345px;
+        }
+
+        .cler .ll {
+            width: 170px;
+            height: 116px;
+            background: #ec2a28;
+            text-align: center;
+            color: #fff;
+        }
+
+        .ll img {
+            margin-top: 20px;
+        }
+
+        .ll h3 {
+            margin: 5px 0;
+        }
+
+        .ll a {
+            font-size: 13px;
+            padding: 3px;
+            background: yellow;
+            border-radius: 5px;
+        }
+        .plcebt{
+            padding-bottom:10px;
+            border-bottom: 1px solid #EFEFEF; 
+        }
+        .lrfsr{
+            width: 303px;
+            border: 1px solid #EFEFEF;
+            border-radius:10px; 
+            padding: 10px 20px;
+        }
+        .mf20{
+            margin-left:25px; 
+        }
+        .lrfsr{
+            margin-bottom: 10px;
+        }
+        .content{width:1200px;margin: 30px auto 0;background:#fff;}
+.imgBox{overflow: hidden;}
+.imgBox>div{width:290px;float:left;}
+.imgBox .center{margin:0 10px;}
+.newsTitle{overflow: hidden;border-left:2px solid #D7B256;}
+.newsName{
+	width: 88px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    color: red;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.more{float:right;font-size:16px;color:rgba(153,153,153,1);}
+.news-list ._img{width:100%;height:80px;padding:10px 0px;}
+.news-piece{
+  padding:5px 0px 5px 15px;
+  background:url(../img/redIcon.png) 0 center no-repeat;
+  overflow: hidden;
+}
+.news-piece.news-top{background:url(../img/stick3.png) 0 center no-repeat;}
+.news-piece a{width:100%;display: inline-block;color:#666;}
+.news-piece .news-content{
+  float:left;
+  width:260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size:18px;
+}
+.news-piece .news-content:hover{
+  color:#DB2E39;
+}
+.news-piece ._content{width:600px;}
+.product{display: flex;flex-direction: row;margin-top: 10px;}
+.product .pro-img img{width:80px;height:95px;}
+.product .pro-desc{padding-left:15px;}
+.product .desc-title{color:red;font-size:18px;margin-top:8px;}
+.product .desc-info{margin-top:5px;}
+.news-list li a{
+    width: 260px;
+    display:inline-block;
+    white-space: nowrap;/*强制一行显示*/
+    overflow:hidden;/*超出部分隐藏*/
+    text-overflow: ellipsis;/*最后添加省略号*/
+}
+.fouter{
+    height: 161px;
+    background:#2F3133;
+    margin-top:30px;
+    }
+    .fout1 h4{
+        color: #fff;
+        margin-top:50px;
+    }
+    .fout1 p{
+        color: #6E6F6F;
+        font-size: 12px;
+        margin: 20px 0;
+    }
+    .fout2 h2{
+        color: #DB2E39;
+        margin-top:50px;
+    }
+    .fout2 p{
+        color: #6E6F6F;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+ .fout2 a{
+     padding: 5px 10px;
+     border:1px solid #EFEFEF;
+     border-radius: 5px; 
+     font-size: 12px;
+     color: #fff;
+    cursor: pointer;
+ }
+ .fout2 a:hover{
+     background: #777878
+ }
+    </style>
+   
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="banner">
+
+        </div>
+        <!-- 平台服务 -->
+        <div id="fuwu " class='wdts cler'>
+            <div class="futitle cler">
+                <p class="bits"><img src="img/asdwq_03.jpg" alt=""><span class="cuss">平台服务</span></p>
+                <div id="tits" class="cler">
+                    <span class="select">科技创新</span>
+                    <span>安全服务</span>
+                    <span>高端人才</span>
+                    <span>招商服务</span>
+                    <span>金融服务</span>
+                </div>
+            </div>
+            <div class="cler">
+                <a style="float:right;">
+                    MORE>
+                </a>
+            </div>
+            <div class="neiro cler">
+                <div class="cler lf withds">
+                    <ol id="cons">
+                        <li class="show hiden">
+                            <div class="lf wisd">
+                                <p class="plcen plcens"><a style="color:#3ABAC4;" href="">[详情]</a>
+                                    汇聚行业乃至产业链中形成的基础性技术、服务资源，为行业内的的企
+                                    业提供在线的基础信息服务，大力发展行业共性技术对整个产业的发展
+                                    有积极的促进作用
+                                </p>
+                                <div class="cler mt20">
+                                    <div class="lf lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">软硬件测试服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">企业管理云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">企业通信云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">软件下载</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="lr lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">开发环境类云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">协同开发云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">企业信息安全云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">虚拟设备在线服务</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 安全服务 -->
+                        <li class="hiden">
+                            <div class="lf wisd">
+                                <p class="plcen plcens"><a style="color:#3ABAC4;" href="">[详情]</a>
+                                    市工信委与市城管局、市工监局、市交通局共同组成的城市运行安全第二督察组一行深入乐安、崇仁、宜黄、广昌、黎川等6个县进行城市安全运行专项整治工作督查。
+                                    我委重点检查了6个县的通信网络线路整治情况，通过查资料、看现场、召开座谈会等形式，掌握各县情况，检查组肯定了各县所做的工作成效，也指出了工作中存在不足
+                                </p>
+                                <div class="cler mt20">
+                                    <div class="">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                    href="">市散办督促检查全市预拌混凝土生产企业</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                    href="">我委配合省节能监测总队开展检查</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">黎川县积极开展降成本优化环境</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="lr lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">开发环境类云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">协同开发云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">企业信息安全云服务</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">虚拟设备在线服务</a></li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 高端人才 -->
+                        <li class="hiden">
+                            <div class="lf wisd">
+                                <p class="plcen plcens"><a style="color:#3ABAC4;" href="">[详情]</a>
+                                    根据《抚州市临安区高层次人才分类认定办法（试行）》（临人社发【2018】45号）文件精神，经研究，决定开展抚州市临川区F类高层次人才分类认定申请
+                                    工作。现将有关事项通知如下
+                                </p>
+                                <div class="cler mt20">
+                                    <div class="lf lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">人才科技创新</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">援助申请列表</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">人才资源需求</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">人才企业对接</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="lr lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">人才成果转化</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">外联专家信息</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">服务需求统计</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">人才认证审核</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 招商服务 -->
+                        <li class="hiden">
+                            <div class="lf wisd">
+                                <p class="plcen plcens"><a style="color:#3ABAC4;" href="">[详情]</a>
+                                    抚州高新区党工委书记邱建国率抚州市科技局长、抚州高新区党工委副书记顾胜和，抚州高新区党工委副书记吴真发，抚州高新区管委会副主任尧刚及房管局，招商局，人社局等负责人一行，赴北京中关村生命科学园考察走访
+                                </p>
+                                <div class="cler mt20">
+                                    <div class="lf lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">招商线索研判</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">企业信息推荐</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">招商落地跟踪</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">招商要素分析</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="lr lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">园区信息查询</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">留言信息处理</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">项目在线填报</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">项目复审联审</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 金融服务 -->
+                        <li class="hiden">
+                            <div class="lf wisd">
+                                <p class="plcen plcens"><a style="color:#3ABAC4;" href="">[详情]</a>
+                                    指在解决企业投资无门，融资无处的资金发展制约问题，抚州产业平台建立了投融资项目库，为企业提供招商对接，项目洽谈以及产业推广服务，助力企业创新发展
+                                </p>
+                                <div class="cler mt20">
+                                    <div class="lf lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">投融资信息库</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">投融资融资信息库</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">股权融资</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">银行信贷</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="lr lfcs">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">投融资机构库</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">投融资融资企业库</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">产权交易</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">典当</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <div class="lr">
+                        <img src="img/images/tyusd_03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lr withsc">
+                    <div class="cler">
+                        <div class="lf ll">
+                            <img src="img/zhus.png" alt="">
+                            <h3>专家智库</h3>
+                            <h4>1000多条党支部信息</h4>
+                        </div>
+                        <div class="lr ll">
+                            <img src="img/xians (1).png" alt="">
+                            <h3>近期会议活动</h3>
+                            <h4>45万条产权及成果信息</h4>
+                        </div>
+                    </div>
+                    <div class="cler" style="margin-top: 4px;">
+                        <div class="lf ll">
+                            <img src="img/bos.png" alt="">
+                            <h3>信息采集</h3>
+                            <a class="asd" href="">点击进入</a>
+                        </div>
+                        <div class="lr ll">
+                            <img src="img/qi1 (1).png" alt="">
+                            <h3>企业信息发布</h3>
+                            <a class="asd" href="">点击进入</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 中间大图 -->
+        <div class="wdts">
+            <img src="img/images/tidsd_03.jpg" alt="">
+        </div>
+        <!-- 党建 -->
+        <div id="dangjian " class='wdts cler'>
+            <div class="futitle cler">
+                <p class="bits"><img src="img/asdwq_03.jpg" alt=""><span class="cuss">党员队伍建设</span></p>
+                <div id="titss" class="cler">
+                    <span class="select">党员发展</span>
+                    <span>党员教育</span>
+                    <span>党员管理</span>
+                    <span>党员服务</span>
+                    <span>党员风采</span>
+                </div>
+            </div>
+            <div class="cler">
+                <a style="float:right;">
+                    MORE>
+                </a>
+            </div>
+            <div class="neiro cler">
+                <div class="cler lf withds">
+                    <ol id="conss">
+                        <!-- 党员发展 -->
+                        <li class="show hiden">
+                            <div class="lf">
+                                <h3>抚州市建立党员发展对象资格县乡联审制度</h3>
+                                <p class="plcen plcens plcebt">
+                                    <a style="color:#3ABAC4; bottom: 10px;" href="">[详情]</a>
+                                    去年以来，肥城市探索建立党员发展对象资格县乡联审制度，进一步明确发展党员工作责任，严肃发展党员工作纪律，严把党员“入口关”，着力提升发展党员工作质量。
+                                </p>
+                                <div class="cler mt20">
+                                    <div class="">
+                                        <ul class="ulsd">
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                    href="">抚州市召开县直机关党员发展工作专题培训会</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">抚州市：明确标准 联审严查
+                                                    全程把好</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">莘县河店镇：严把“三道关卡”
+                                                    做好党员发展工作</a>
+                                            </li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                    href="">抚州新区提高“两新”组织党组织发展党员质量</a></li>
+                                            <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">抚州综合试验区：全员进党校
+                                                    海岛第一课</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                          <!-- 党员教育 -->
+                          <li class="hiden">
+                                <div class="lf">
+                                    <h3>抚州市党员培训工作跨入可视化时代</h3>
+                                    <p class="plcen plcens plcebt">
+                                        <a style="color:#3ABAC4;bottom: 10px;" href="">[详情]</a>
+                                        有了抚州市党建可视化信息平台的帮助，3个会场同步直播，分会场还能与主会场交流互动，形式活了，培训更深入，教育的效
+ 果就有了〞然而，抚州党建可视化信息平台的功能还远不止于此，它已成为一个标杆
+                                    </p>
+                                    <div class="cler mt20">
+                                        <div class="">
+                                            <ul class="ulsd">
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">抚州市召开县直机关党员发展工作专题培训会</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">抚州市：明确标准 联审严查
+                                                        全程把好</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">莘县河店镇：严把“三道关卡”
+                                                        做好党员发展工作</a>
+                                                </li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">抚州新区提高“两新”组织党组织发展党员质量</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">抚州综合试验区：全员进党校
+                                                        海岛第一课</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                         <!-- 党员管理 -->
+                         <li class="hiden">
+                                <div class="lf">
+                                    <h3>抚州市：依托灯塔平台 强化党员管理精准化</h3>
+                                    <p class="plcen plcens plcebt">
+                                        <a style="color:#3ABAC4; bottom: 10px;" href="">[详情]</a>
+                                        在新形势下，滨州市惠民县依托“灯塔-党建在线”网络平台强化党员管理的形式和方法，充分发挥信息化平台高效便捷的特点，对党员进行动态管理、动态分析，实现了党员基础数据更加准确，更新维
+                                    </p>
+                                    <div class="cler mt20">
+                                        <div class="">
+                                            <ul class="ulsd">
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">抚州市：“党员先锋队”吹响片区整体提升工作“集结号”</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a 
+                                                    href="">抚州市馆驿镇：“五项制度”力促流动党员规范管理</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a 
+                                                    href="">把流动党员牢牢凝聚在党旗下</a>
+                                                </li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">鱼台县公安系统探索党员管理新模式</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">抚州市在京流动党员党委座谈会在北京召开</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                             <!-- 党员服务 -->
+                         <li class="hiden">
+                                <div class="lf">
+                                    <h3>抚州市：“三结合”做好党员志愿服务活动</h3>
+                                    <p class="plcen plcens plcebt">
+                                        <a style="color:#3ABAC4; bottom: 10px;" href="">[详情]</a>
+                                        为进一步做好党员志愿服务活动，临沂市莒南县板泉镇党委立足实际、突出重点，将党员志愿服务活动与党员承诺、主题党日、特色活动相结合，确保活动有亮点、有特色，有效推动了党员志愿服务活动
+
+                                    </p>
+                                    <div class="cler mt20">
+                                        <div class="">
+                                            <ul class="ulsd">
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">市中区大观园街道商埠挎包服务队</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a 
+                                                    href="">抚州市：传承“红色基因” 书写志愿服务新篇章</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a 
+                                                    href="">开展“党员干部固定志愿服务日”活动</a>
+                                                </li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">抚州市启动党员志愿者服务进社区进农村活动</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">抚州市：党员义工助力群众安居乐业</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                             <!-- 党员风采 -->
+                         <li class="hiden">
+                                <div class="lf">
+                                    <h3>种好党建这棵“梧桐树”</h3>
+                                    <p class="plcen plcens plcebt">
+                                        <a style="color:#3ABAC4; bottom: 10px;" href="">[详情]</a>
+                                        邹城市峄山镇纪西村位于峄山景区西南方向3公里处，这个村基础设施差，党员凝聚力弱，群众怨言多，是一个多年选不出村支书的软弱涣散村。2018年2月，张华伟初到纪西村就受到冷遇
+
+                                    </p>
+                                    <div class="cler mt20">
+                                        <div class="">
+                                            <ul class="ulsd">
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">抚州市优秀共产党员高晓：用心办好每一起案件</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a 
+                                                    href="">投身人民调解工作 做新时代党员的标杆</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a 
+                                                    href="">孙建博——新时代的“林业英雄”</a>
+                                                </li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a
+                                                        href="">税徽闪耀抚州市</a></li>
+                                                <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">家里的“陌生人” 群众的贴心人</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                    </ol>
+                </div>
+                <div class="lr withsc">
+                    <div class="lrfsr cler">
+                        <img class="lf" src="img/images/f1_03.jpg" alt="">
+                        <div class="lf mf20">
+                            <h3>共产党员网</h3>
+                            <p>党员身边的网络党校</p>
+                        </div> 
+                    </div>
+                    <div class="lrfsr cler">
+                            <img class="lf" src="img/images/f2_03.jpg" alt="">
+                            <div class="lf  mf20">
+                                <h3>共产党员网 </h3>
+                                <p>为基层培养“不走的”大学生</p>
+                            </div> 
+                        </div>
+                        <div class="lrfsr cler">
+                                <img class="lf" src="img/images/f3_03.jpg" alt="">
+                                <div class="lf  mf20">
+                                    <h3>中共抚州市委组织部</h3>
+                                    <p>规范工作程序  确保发展质量</p>
+                                </div> 
+                            </div>
+                            <div class="lrfsr cler">
+                                    <img class="lf" src="img/images/f4_03.jpg" alt="">
+                                    <div class="lf  mf20">
+                                        <h3>江西党建网</h3>
+                                        <p>信息多跑路 党员少跑腿</p>
+                                    </div> 
+                                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 动态 -->
+        <div id="conter" class="wdts">
+            <div class="dynamics">
+                <div class="dynac dynal">
+                    <div class="dytitle">
+                        <div class="titl lf">
+                            <span class="spa1">
+                                ICPSP动态
+                            </span>
+                            <!-- <span class="spa2">
+                                CSIP动态
+                            </span> -->
+                        </div>
+                        <div class="titr lr">
+                            <a>
+                                MORE>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dynacen">
+                        <div class="cler mato">
+                            <img class="lf dyimg" src="img/dota-1.jpg" alt="">
+                            <div class="lr tils">
+                                <h3>2018年颗粒测试与表征技术培训在上海成功举办</h3>
+                                <p class="fenx"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                        src="img/cz.png" alt=""><span>1008</span> <a href=""><img src="img/fz.png"
+                                            alt=""><span>分享</span></a></p>
+                                <p class="plcen"><a href="">[详情]</a> 么我刚开始的时候那是利用的float浮动布局解决的，定位布局（兼容性需要调整
+                                    不划算）下面给大家介绍一些其他的方法么我刚开始的时候那是利用的float浮动布局解决的，定位布局（兼容性需要调整
+                                    不划算）下面给大家介绍一些其他的方法么我刚开始的时候那是利用的float浮动布局解决的，定位布局（兼容性需要调整
+                                    不划算）下面给大家介绍一些其他的方法么我刚开始的时候那是利用的float浮动布局解决的，定位布局（兼容性需要调整 不划算）下面给大家介绍一些其他的方法</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a class="lf wids" href="">8月7号,刚开始的时候那是利用的float浮动布局解刚开始的时候那是利用的float浮动布局解</a>
+                                    <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                            src="img/cz.png" alt=""><span>1008</span> <a href=""><img src="img/fz.png"
+                                                alt=""><span>分享</span></a></p>
+                                </li>
+                                <li>
+                                    <a class="lf wids" href="">8月7号,刚开始的时候那是利用的float浮动布局解刚开始的时候那是利用的float浮动布局解</a>
+                                    <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                            src="img/cz.png" alt=""><span>1008</span> <a href=""><img src="img/fz.png"
+                                                alt=""><span>分享</span></a></p>
+                                </li>
+                                <li>
+                                    <a class="lf wids" href="">8月7号,刚开始的时候那是利用的float浮动布局解刚开始的时候那是利用的float浮动布局解</a>
+                                    <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                            src="img/cz.png" alt=""><span>1008</span> <a href=""><img src="img/fz.png"
+                                                alt=""><span>分享</span></a></p>
+                                </li>
+                                <li>
+                                    <a class="lf wids" href="">8月7号,刚开始的时候那是利用的float浮动布局解刚开始的时候那是利用的float浮动布局解</a>
+                                    <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                            src="img/cz.png" alt=""><span>1008</span> <a href=""><img src="img/fz.png"
+                                                alt=""><span>分享</span></a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dynac dynar">
+                    <div class="lksd">
+                        <div id="tit">
+                            <span class="select">时政要闻</span>
+                            <span>党建动态</span>
+                            <span>热点关注</span>
+                        </div>
+                    </div>
+                    <div id="con">
+                        <div class="show">
+                            <ul>
+                                <li><a href="">●首次,2018年颗粒测试与表征技术培训在上海成功举办</a></li>
+                                <li><a href="">●肖毅出席全市"两学一做"学习动员大会</a></li>
+                                <li><a href="">●全市村（社区）‘两委“换届选举工作会议</a></li>
+                                <li><a href="">●抚州市部署集中开展后进基层党组织整顿</a></li>
+                                <li><a href="">●2013第二届亚洲营养食品科技论坛</a></li>
+                                <li><a href="">●抚州市实行机关干部社区报道工作为群众</a></li>
+                                <li><a href="">●我市建立党员固定活动日制度</a></li>
+                                <li><a href="">●中共抚州市委关于在全市开展“交民友</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="">●肖毅：加快推动媒体融合发展，构建</a></li>
+                                <li><a href="">●抚州市办公厅印发《关于解决形式主义</a></li>
+                                <li><a href="">●抚州临川关于加强党的政治建设意见</a></li>
+                                <li><a href="">●抚州市印发〈中国工程院胡娜党重大事项</a></li>
+                                <li><a href="">●张鸿星：坚定文化自信 传承红色基因</a></li>
+                                <li><a href="">●省委教育工作领导小组召开会议</a></li>
+                                <li><a href="">●省委常委会扩大会议通报十一届省委</a></li>
+                                <li><a href="">●江西省科学技术协会第九次代表大会</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="">●习近平谈中国特色社会主义</a></li>
+                                <li><a href="">●总书记对四大根本问题的论述</a></li>
+                                <li><a href="">●这些重大问题，习近平的回答</a></li>
+                                <li><a href="">●学习《党政领导干部选拔任用工作》</a></li>
+                                <li><a href="">●求是：毫不动摇剪出和发展中国</a></li>
+                                <li><a href="">●十九大党章为学堂</a></li>
+                                <li><a href="">●三国话党建</a></li>
+                                <li><a href="">●不断创造伟大奇迹的光辉历程</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 动态 结束-->
+        <!-- 园区扶持 -->
+        <div class="content wdts">
+            <div style="border-top: 2px solid #6E6F6F;width: 890px;margin-bottom: 10px;"></div>
+                <div class="imgBox">
+               
+                    <div class="left">
+                        <div class="newsBox rlqb">
+                            <div class="newsTitle">
+                                <div class="newsName">园区产业扶持</div>
+                                <a href="" class="more">MORE></a>
+                            </div>
+                            <div class="news-list">
+                                <div>
+                                    <img src="img/images/s1_03.jpg" class="_img">
+                                </div>
+                                <ul class="ulsd">
+                                    <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">国家技术重大建业</a></li>
+                                    <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">极大规模集成电路制造装备</a></li>
+                                    <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">新一代宽带无线移动通信网</a>
+                                    </li>
+                                    <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">大型先进压水堆及高温气冷堆核电站</a></li>
+                                    <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">高分子率观测系统</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="newsBox rlqb">
+                            <div class="newsTitle">
+                                <div class="newsName">园区政策标准</div>
+                                <a href="" class="more">MORE></a>
+                            </div>
+                            <div class="news-list">
+                                <div>
+                                    <img src="img/images/s2_03.jpg" class="_img">
+                                </div>
+                                <ul class="ulsd">
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">关于印发下一代互联网的相关数据</a></li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">关于做好和高级重大项目2018年启动</a></li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">关于申报2018年度中国电子学会</a>
+                                        </li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">关于申报新一批废弃电器电子产品</a></li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">关于〞核心电子器件、高端通用芯片</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="newsBox rlqb">
+                            <div class="newsTitle">
+                                <div class="newsName">专家观点</div>
+                                <a href="" class="more">MORE></a>
+                            </div>
+                            <div class="news-list">
+                                <div>
+                                    <img src="img/images/s3_03.jpg" class="_img">
+                                </div>
+                                <ul class="ulsd">
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">国务院关于加强食品安全工作的决定</a></li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">国务院办公厅关于印发2018年度食品</a></li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">抚州市召开深入持久战，提高食品安全</a>
+                                        </li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">大型先进压水堆及高温气冷堆核电站</a></li>
+                                        <li><img src="img/images/wqeqew_03.jpg" alt=""><a href="">高分子率观测系统</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="right" style="margin-left:10px;">
+                        <div class="newsBox rlqb">
+                            <div class="newsTitle">
+                                <div class="newsName">产品研究</div>
+                            </div>
+                            <div class="news-list">
+                                <div class="product">
+                                    <div class="pro-img">
+                                        <img src="img/images/a1_03.jpg">
+                                    </div>
+                                    <div class="pro-desc">
+                                        <p class="desc-title">变电产业动态</p>
+                                        <p class="desc-info">——变电产业动态变电行业应用与专题报告</p>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="pro-img">
+                                        <img src="img/images/a2_03.jpg">
+                                    </div>
+                                    <div class="pro-desc">
+                                        <p class="desc-title">机械产业动态</p>
+                                        <p class="desc-info">——机械制造的最新前沿动态</p>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="pro-img">
+                                        <img src="img/images/a3_03.jpg">
+                                    </div>
+                                    <div class="pro-desc">
+                                        <p class="desc-title">芯闻参考</p>
+                                        <p class="desc-info">——中国芯整机与芯片联动专题报告</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    </div>
+    <div class="fouter">
+        <div class="wdts">
+            <div class="lf fout1">
+                <h4>抚州工业园区公共信息服务平台</h4>  
+                <p>指导单位：抚州市工业和信息化委员会 | 主办单位： 抚州市工业与科技创新投资发展有限责任公司 | 运营支持：浪潮软件集团有限公司</p>
+                <p>版权所有：浪潮软件集团有限公司 | 京ICP备 04000001号</p>   
+            </div>
+            <div class="lr fout2">
+                <h2>400-075-2008</h2>
+                <p>服务时间：工作日  09:00-18:00</p>
+                <a>
+                    联系我们
+                </a>
+                <a style="margin-left:10px;">
+                        关于我们
+                    </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $('#tit span').click(function () {
+        var i = $(this).index();//下标第一种写法
+        //var i = $('tit').index(this);//下标第二种写法
+        $(this).addClass('select').siblings().removeClass('select');
+        $('#con div').eq(i).show().siblings().hide();
+    });
+    $('#tits span').click(function () {
+        var i = $(this).index();//下标第一种写法
+        //var i = $('tit').index(this);//下标第二种写法
+        $(this).addClass('select').siblings().removeClass('select');
+        $('#cons .hiden').eq(i).addClass('show').siblings().removeClass('show');
+    });
+    $('#titss span').click(function () {
+        var i = $(this).index();//下标第一种写法
+        //var i = $('tit').index(this);//下标第二种写法
+        $(this).addClass('select').siblings().removeClass('select');
+        $('#conss .hiden').eq(i).addClass('show').siblings().removeClass('show');
+    });
+</script>
+
+</html>

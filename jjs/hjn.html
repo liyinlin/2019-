@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript" src="./swfupload.js"></script>
+  <title>文件上传测试</title>
+ </head>
+ <body>
+  
+<buttton id="upload"></button>
+ 
+  <script>
+var swfu;
+	window.onload = function () {
+		swfu = new SWFUpload({
+			// Backend Settings
+			upload_url: "__APP__/Upload/upload",
+			post_params: {},
+ 
+			// File Upload Settings
+			file_size_limit : "100 MB",	// 2MB
+			file_types : "*.mp4",
+			file_types_description : "JPG Images",
+			file_upload_limit : 1,
+			file_queue_error_handler : fileQueueError,
+			file_dialog_complete_handler : fileDialogComplete,
+			upload_progress_handler : uploadProgress,
+			upload_error_handler : uploadError,
+			upload_success_handler : uploadSuccess,
+			upload_complete_handler : uploadComplete,
+ 
+			// Button Settings
+			button_image_url : "img/images/a1_03.jpg",
+			button_placeholder_id : "upload",
+			button_width: 100,
+			button_height: 40,
+			button_text : '',
+			//button_text_style : '.button { font-family: Helvetica, Arial, sans-serif; font-size: 12pt; } .buttonSmall { font-size: 10pt; }',
+			button_text_top_padding: 0,
+			button_text_left_padding: 18,
+			button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+			button_cursor: SWFUpload.CURSOR.HAND,
+				
+			// Flash Settings
+			flash_url : "./swfupload.swf",
+ 
+			custom_settings : {
+				upload_target : "divFileProgressContainer"
+			},
+				
+			// Debug Settings
+			debug: false
+			});
+		};
+ 
+		function uploadProgress(file,load,total){
+			console.log("uploadProgress：目前加载"+load+"   总数："+total);
+		}
+ 
+		function uploadError(file, errorCode, message){
+			console.log("uploadError：错误信息："+message);
+		}
+ 
+		function uploadSuccess(file, serverData){
+			console.log("上传成功："+serverData);
+		}
+ 
+		function uploadComplete(file){
+			console.log("上传完成");
+		}
+ 
+		function fileQueueError(file, errorCode, message) {
+			try {
+				var imageName = "error.gif";
+				var errorName = "";
+				if (errorCode === SWFUpload.errorCode_QUEUE_LIMIT_EXCEEDED) {
+					errorName = "You have attempted to queue too many files.";
+				}
+ 
+				if (errorName !== "") {
+					alert(errorName);
+					return;
+				}
+ 
+				switch (errorCode) {
+				case SWFUpload.QUEUE_ERROR.ZERO_BYTE_FILE:
+					imageName = "zerobyte.gif";
+					break;
+				case SWFUpload.QUEUE_ERROR.FILE_EXCEEDS_SIZE_LIMIT:
+					imageName = "toobig.gif";
+					break;
+				case SWFUpload.QUEUE_ERROR.ZERO_BYTE_FILE:
+				case SWFUpload.QUEUE_ERROR.INVALID_FILETYPE:
+				default:
+					alert(message);
+					break;
+				}
+ 
+				addImage("images/" + imageName);
+ 
+			} catch (ex) {
+				this.debug(ex);
+			}
+ 
+		}
+ 
+		function fileDialogComplete(numFilesSelected, numFilesQueued) {
+			try {
+				if (numFilesQueued > 0) {
+					this.startUpload();
+				}
+			} catch (ex) {
+				this.debug(ex);
+			}
+		}
+  </script>
+ </body>
+</html>

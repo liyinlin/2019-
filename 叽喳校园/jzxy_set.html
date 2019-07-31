@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%}
+		html{font-size: 100px;}
+		.set_all{padding-bottom: 0.15rem;}
+		.set_header{width: 92.5%;margin: 0 auto;height: 0.68rem;position: relative;}
+		.set_header p{font-size: 0.34rem;color:white;line-height: 0.68rem;text-align: center;}
+		.set_header_L{float: left;display: block;}
+		.set_header_L img{width: 0.18rem;height: 0.33rem;display: block;margin: 0.175rem 0;}
+		.set_first{width:5.8rem;padding: 0 0.3rem;}
+		.set_first li{overflow: hidden;height: 0.67rem;padding: 0.17rem;border-bottom: 0.01rem solid #f4f4f4;}
+		.set_first span{font-size: 0.3rem;color: #666666;display: block;float: left;line-height: 0.3rem;margin-top: 0.185rem;margin-left: 0.4rem}
+		.set_first_img2{width:0.21rem;height: 0.28rem;display: block;float: right;margin-top: 0.195rem;}
+		.set_first_img1{width: 1.06rem;height: 1rem;position: absolute;display: block;top: 0.17rem;right: 0.5rem;}
+		.set_jianju{width: 100%;height: 0.16rem;background-color: #f1f1f1;}
+		.set_second{width: 5.8rem;padding: 0 0.3rem;overflow: hidden;}
+		.set_second div{overflow: hidden;height: 0.55rem;padding: 0.17rem;border-bottom: 0.01rem solid #f4f4f4;}
+		.set_second span{font-size: 0.3rem;color: #666666;display: block;float: left;line-height: 0.3rem;margin-top: 0.1rem;margin-left: 0.4rem}
+		.set_second img{width: 0.55rem;height: 0.55rem;display: block;float: right;}
+	</style>
+</head>
+<body>
+	<div class="set_all">
+		<div style="width:100%;height:0.68rem;background-color:#4c93eb;padding:0.1rem 0;">
+			<div class="set_header">
+				<p>
+					设置
+					<a href="jzxy_grzx.html" class="set_header_L">
+						<img src="images/jzxy_xtb6.png" alt="">
+					</a>
+				</p>
+			</div>	
+		</div>
+		<ul class="set_first">
+			<li style="position: relative;height:1rem;">
+				<span style="margin-top:0.35rem;">头像</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2"style="margin-top:0.36rem;">
+				<img src="images/jzxy_xtb23.png" alt="" class="set_first_img1">
+			</li>
+			<li>
+				<span>账号</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2">
+			</li>
+			<li>
+				<span>昵称</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2">
+			</li>
+			<li>
+				<span>性别</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2">
+			</li>
+			<li>
+				<span>个性签名</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2">
+			</li>
+		</ul>
+		<div class="set_jianju"></div>
+		<div class="set_second">
+			<div>
+				<span>我的二维码</span>
+				<img src="images/jzxy_xtb24.png" alt="">
+			</div>
+		</div>
+		<div class="set_jianju"></div>
+		<ul class="set_first" style="margin:0;">
+			<li>
+				<span>城市</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2">
+			</li>
+			<li>
+				<span>地区</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2">
+			</li>
+			<li>
+				<span>学校</span>
+				<img src="images/jzxy_xtb7.png" alt="" class="set_first_img2">
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+	<script>
+ 		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+ 	</script>

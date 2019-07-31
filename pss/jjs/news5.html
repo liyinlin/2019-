@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        /* 头部开始 */
+        .wdtss a {
+            color: #000;
+        }
+
+        .top1 {
+            width: 100%;
+            background: #d7e6ff;
+            line-height: 34px;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlf {
+            margin-left: 20px;
+        }
+
+        #titsss span {
+            background: #fff;
+        }
+
+        #titsss span {
+            border-top: #fff;
+            font-weight: normal;
+        }
+
+        #titsss .select {
+            border-top: #fff;
+            font-weight: normal;
+
+        }
+
+        #cons .laws .ulsd li a {
+            display: inline-block;
+            width: 174px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .wdts {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lf {
+            float: left;
+        }
+
+        .lr {
+            float: right;
+        }
+
+        .fouter {
+            height: 161px;
+            background: #2F3133;
+        }
+
+        .fout1 h4 {
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .fout1 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 20px 0;
+        }
+
+        .fout2 h2 {
+            color: #DB2E39;
+            margin-top: 50px;
+        }
+
+        .fout2 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .fout2 a {
+            padding: 5px 10px;
+            border: 1px solid #EFEFEF;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .fout2 a:hover {
+            background: #777878
+        }
+
+        .psd1 {
+            line-height: 25px;
+            font-size: 14px;
+            padding: 15px;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        /* 头尾部结束 */
+        .bors {
+            border-top: 1px solid #EFEFEF;
+        }
+
+        .l234 {
+            width: 234px;
+        }
+
+        .l914 {
+            width: 914px;
+        }
+
+        .bgl {
+            background: #1E668B;
+            color: #fff;
+            font-size: 36px;
+            height: 66px;
+            text-align: center;
+            line-height: 66px;
+            margin-bottom: 10px;
+        }
+
+        .ff1 {
+            height: 50px;
+            border: 1px solid #EFEFEF;
+            text-align: center;
+            font-size: 16px;
+            line-height: 50px;
+            margin-bottom: 10px;
+            background: url('img/images/yy1.png') 15% 50% no-repeat;
+        }
+
+        .ff1:hover {
+            color: #fff;
+
+            background: #1E668B url('img/images/yy2.png') 15% 50% no-repeat;
+        }
+
+        .news1 {
+            padding: 25px 0 10px;
+            overflow: hidden;
+            border-bottom: 1px solid #EFEFEF;
+        }
+
+        .l143 img {
+            width: 199px;
+            height: 122px;
+        }
+
+        .l580 {
+            width: 690px;
+        }
+
+        .tils h3 {
+            /* margin: 15px 0; */
+            font-size: 16px;
+            margin-bottom: 13px;
+        }
+
+        .fenx span {
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .plcen {
+            margin-top: 10px;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            line-height: 28px;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            display: -webkit-box;
+            display: box;
+            position: relative;
+            color: #838383;
+        }
+        .tecs {
+    text-align: center;
+    margin: 20px 0;
+}
+.fo1 {
+    width: 350px;
+    display: inline-block;
+}
+.fo1 li {
+    border: 1px solid #838383;
+    color: #838383;
+    float: left;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="top1">
+        <div class="wdtss cler">
+            <div class="lf mlks">
+                <img style="width: 12px;" src="img/ff2.png" alt="">
+                <a href="">园区公共服务门户</a> |
+                <a href="">综合管理服务平台</a> |
+                <a href="">非公党建服务平台</a> |
+                <a href="">辅助决策支持平台 </a>
+            </div>
+            <div class="lr mjk">
+                <a href="">帮助中心</a>
+                <a href="" style="margin: 0 10px">登录</a>
+                <a href="" style="background: #D7B758;
+                                        border-radius: 3px;
+                                        color:#fff;
+                                        padding: 5px 10px;">注册</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="wdtss posy">
+        <img src="img/images/wesad_03.jpg" alt="">
+        <div class="poab">
+            <div class="spmsw">
+                <input type="text"><span><img style="width: 28px;" src="img/spou.png" alt=""></span>
+            </div>
+            <p class="lpso">热门产品:<span>产业园</span><span>工业园</span><span>新闻</span></p>
+        </div>
+    </div>
+    <div class="cler wdts">
+        <div class="lr psd1">
+            您当前的位置：<a>首页&gt;</a><span style="color:#D7B758;">新闻中心</span>
+        </div>
+    </div>
+    <div class="wdts bors cler">
+        <div class="lf l234" style="margin-top: 25px;">
+            <div class="bgl">
+                ISCP
+            </div>
+            <div class="ff1">
+                合作单位用工
+            </div>
+            <div class="ff1">
+                园区用工
+            </div>
+            <div class="ff1">
+                志愿服务
+            </div>
+        </div>
+        <div class="lr l914">
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/c1_03.jpg" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">召开服务工业园区企业用工工作会议</h3>
+                                <p class="fenx lr"><span>发布时间：2017-5-10 </span>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                会议要求，各单位一定要提高认识，真正把思想统一到服务用工作上来，千方百计，想方设法，切实为企业用工提供服务，促进道县进济发展。会后，各单位迅速召开会议，研究制定切实可行的服务企业招工方案，将县里分配的招工目标任务分解到村到组，责任到人到户。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/c2_03.jpg" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">关于切实加强工业园区用工服务工作的意见</h3>
+                                <p class="fenx lr"><span>发布时间：2017-5-10 </span>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                为进一步贯彻落实政府存进就业、市场调节就业、劳动者自主择业的方针，有效发挥我市人力资源的比较优势，切实加强工业园区用工服务工作，加快推进工业化进程，促进全市
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/c3_03.jpg" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">“春风行动”服务园区企业用工工作</h3>
+                                <p class="fenx lr"><span>发布时间：2017-5-10 </span>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                会议指出，做好2019年的企业用工工作，必须立足当前，从现在做起。要牢牢抓住当前时值年关岁末，在外务工人员陆续返乡的有利时机，大力开展招工活动，进村入户，广泛深入宣传联系，务求招工取得实效。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/c4_03.jpg" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">召开“加强园区企业用工服务和就业培训工作座谈会”</h3>
+                                <p class="fenx lr"><span>发布时间：2017-5-10 </span>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                大家围绕“进一步强化就业服务长效机制，对用人单位和求职者进行长期跟踪服务(其中主要包括：用工信息网络、组织用工招聘、开展岗前培训和职业技能培训)；
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/c5_03.jpg" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">加强园区用工服务 促进经济协调发展</h3>
+                                <p class="fenx lr"><span>发布时间：2017-5-10 </span>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                伴随着工业园区的发展和用工总量的加大,企业招工难问题也频频成为媒体关注的焦点。针对企业员工招不进、稳不住、留不下等情况....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/c6_03.jpg" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">服务园区用工，助推精准扶贫</h3>
+                                <p class="fenx lr"><span>发布时间：2017-5-10 </span>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                现场还设置了技能培训项目推介展示区，推介展示了适合城乡富余劳动力技能就业中式面点师、西式面点师、月嫂、美容化妆、茶艺、插花、电工、焊工等培训项目，通过现场展示吸引城乡劳动力195人报名参加培训。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tecs">
+                    <ol class="cler fo1">
+                        <li>上一页</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>下一页</li>
+                    </ol>
+                </div>
+        </div>
+    </div>
+    <div class="fouter">
+        <div class="wdts cler">
+            <div class="lf fout1">
+                <h4>抚州工业园区公共信息服务平台</h4>
+                <p>指导单位：抚州市工业和信息化委员会 | 主办单位： 抚州市工业与科技创新投资发展有限责任公司 | 运营支持：浪潮软件集团有限公司</p>
+                <p>版权所有：浪潮软件集团有限公司 | 京ICP备 04000001号</p>
+            </div>
+            <div class="lr fout2">
+                <!-- <h2>400-075-2008</h2> -->
+                <p style="margin-top: 50px;">服务时间：工作日 09:00-18:00</p>
+                <a>
+                    联系我们
+                </a>
+                <a style="margin-left:10px;">
+                    关于我们
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

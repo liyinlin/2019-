@@ -1,0 +1,428 @@
+{
+  "jzxy_denglu1.html": {
+    "href": "jzxy_denglu1.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/dengli1_photo.png",
+      "images/jzxy_xtb8.png",
+      "images/jzxy_xtb9.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "jzxy_market_M.html": {
+    "href": "jzxy_market_M.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/market_M_last.png",
+      "images/part_time_M_bg.png",
+      "images/jzxy_xtb26.png",
+      "images/jzxy_xtb27.png",
+      "images/jzxy_xtb6.png",
+      "images/jzxy_xtb2.png"
+    ],
+    "refer": [
+      "jzxy_market_list.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_market_list.html": {
+    "href": "jzxy_market_list.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb10.png",
+      "images/jzxy_xtb6.png",
+      "images/jzxy_xtb25.png",
+      "images/market_nr1.png",
+      "images/jzxy_znew4.png",
+      "images/market_nr.png",
+      "images/jzxy_znew2.png",
+      "images/jzxy_znew3.png",
+      "images/jzxy_znew1.png",
+      "images/jzxy_xtb15.png"
+    ],
+    "refer": [
+      "jzxy_market_M.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_release.html": {
+    "href": "jzxy_release.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/market_nr.png",
+      "images/market_nr1.png",
+      "images/jzxy_xtb28.png",
+      "images/jzxy_xtb6.png"
+    ],
+    "refer": [
+      "jzxy_market.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_market.html": {
+    "href": "jzxy_market.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/market.bg.png",
+      "images/jzxy_xtb3.png",
+      "images/market_nr.png",
+      "images/market_nr1.png",
+      "images/market_banner1.png",
+      "images/market_banner2.png",
+      "images/market_banner3.png",
+      "images/market_banner4.png",
+      "images/market_banner5.png",
+      "images/market_banner6.png",
+      "images/market_banner7.png",
+      "images/jzxy_xtb1.png",
+      "images/jzxy_xtb25.png"
+    ],
+    "refer": [
+      "jzxy_market_list.html",
+      "jzxy_release.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_part_time_M.html": {
+    "href": "jzxy_part_time_M.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/part_time_M_bg.png",
+      "images/part_time_M_nr.png",
+      "images/part_time_M_nr1.png",
+      "images/jzxy_xtb6.png",
+      "images/jzxy_xtb10.png",
+      "images/jzxy_xtb13.png",
+      "images/jzxy_xtb11.png",
+      "images/jzxy_xtb12.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "jzxy_newlb.html": {
+    "href": "jzxy_newlb.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb10.png",
+      "images/jzxy_xtb6.png",
+      "images/jzxy_znew3.png",
+      "images/jzxy_znew4.png",
+      "images/jzxy_znew1.png",
+      "images/jzxy_znew2.png",
+      "images/jzxy_xtb11.png",
+      "images/jzxy_xtb12.png"
+    ],
+    "refer": [
+      "jzxy_part_time_M.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_part_time_new.html": {
+    "href": "jzxy_part_time_new.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb3.png",
+      "images/part_time_banner1.png",
+      "images/part_time_banner2.png",
+      "images/part_time_banner3.png",
+      "images/part_time_banner4.png",
+      "images/part_time_banner5.png",
+      "images/part_time_banner6.png",
+      "images/part_time_banner7.png",
+      "images/part_time_banner8.png",
+      "images/jzxy_xtb1.png",
+      "images/jzxy_xtb10.png",
+      "images/jzxy_znew3.png",
+      "images/jzxy_znew4.png",
+      "images/jzxy_znew1.png",
+      "images/jzxy_znew2.png",
+      "images/jzxy_xtb11.png",
+      "images/jzxy_xtb12.png"
+    ],
+    "refer": [
+      "jzxy_newlb.html",
+      "jzxy_part_time_M.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_news_M.html": {
+    "href": "jzxy_news_M.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/news_M_bg.png",
+      "images/jzxy_xtb6.png"
+    ],
+    "refer": [
+      "jzxy_news.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_news.html": {
+    "href": "jzxy_news.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb1.png",
+      "images/jzxy_xtb10.png",
+      "images/jzxy_banner.png",
+      "images/new_banner.png",
+      "images/education4.png",
+      "images/jzxy_znew3.png",
+      "images/jzxy_znew4.png",
+      "images/jzxy_znew1.png",
+      "images/education1.png",
+      "images/jzxy_xtb4.png",
+      "images/jzxy_xtb5.png"
+    ],
+    "refer": [
+      "jzxy_denglu1.html",
+      "jzxy_news_M.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_education_M.html": {
+    "href": "jzxy_education_M.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/education-more_bg.png",
+      "images/education_more_last.png",
+      "images/jzxy_xtb22.png",
+      "images/jzxy_xtb17.png",
+      "images/jzxy_xtb18.png",
+      "images/jzxy_xtb19.png",
+      "images/jzxy_xtb20.png",
+      "images/jzxy_xtb21.png",
+      "images/jzxy_xtb6.png"
+    ],
+    "refer": [
+      "jzxy_education.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_education.html": {
+    "href": "jzxy_education.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb14.png",
+      "images/jzxy_xtb6.png",
+      "images/education1.png",
+      "images/education2.png",
+      "images/education3.png",
+      "images/education4.png",
+      "images/jzxy_znew3.png",
+      "images/jzxy_znew4.png",
+      "images/jzxy_znew1.png",
+      "images/jzxy_xtb15.png",
+      "images/jzxy_xtb4.png",
+      "images/jzxy_xtb5.png"
+    ],
+    "refer": [
+      "jzxy_education_M.html",
+      "jzxy_newjy.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_newjy.html": {
+    "href": "jzxy_newjy.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/new_education_bg.png",
+      "images/jzxy_xtb16.png",
+      "images/newjy_nr2.png",
+      "images/newjy_nr1.png",
+      "images/newjy_nr3.png",
+      "images/newjy_nr4.png",
+      "images/jzxy_xtb1.png",
+      "images/jzxy_xtb10.png"
+    ],
+    "refer": [
+      "jzxy_education.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_micro.html": {
+    "href": "jzxy_micro.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb6.png",
+      "images/jzxy_xtb10.png",
+      "images/Micro1.png",
+      "images/jzxy_xtb29.png",
+      "images/Micro2.png",
+      "images/Micro3.png",
+      "images/Micro4.png",
+      "images/Micro5.png",
+      "images/Micro6.png",
+      "images/Micro7.png",
+      "images/Micro8.png",
+      "images/jzxy_xtb4.png",
+      "images/jzxy_xtb5.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "jzxy_collection.html": {
+    "href": "jzxy_collection.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb6.png",
+      "images/education1.png",
+      "images/market_nr.png",
+      "images/jzxy_znew2.png",
+      "images/jzxy_znew3.png",
+      "images/jzxy_xtb17.png"
+    ],
+    "refer": [
+      "jzxy_grzx.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_chat.html": {
+    "href": "jzxy_chat.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb30.png",
+      "images/jzxy_xtb31.png",
+      "images/Micro1.png",
+      "images/Micro2.png",
+      "images/Micro3.png",
+      "images/jzxy_xtb22.png",
+      "images/jzxy_xtb6.png"
+    ],
+    "refer": [
+      "jzxy_message.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_message.html": {
+    "href": "jzxy_message.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb6.png",
+      "images/jzxy_xtb10.png",
+      "images/Micro1.png",
+      "images/jzxy_xtb29.png",
+      "images/Micro2.png",
+      "images/Micro3.png",
+      "images/Micro4.png",
+      "images/Micro5.png",
+      "images/Micro6.png",
+      "images/Micro7.png",
+      "images/Micro8.png",
+      "images/jzxy_xtb4.png",
+      "images/jzxy_xtb5.png"
+    ],
+    "refer": [
+      "jzxy_chat.html",
+      "jzxy_grzx.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_friend.html": {
+    "href": "jzxy_friend.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/Micro1.png",
+      "images/Micro2.png",
+      "images/Micro3.png",
+      "images/jzxy_xtb6.png",
+      "images/jzxy_xtb10.png",
+      "images/circle.png",
+      "images/circle_xtb.png",
+      "images/circle1.png"
+    ],
+    "refer": [
+      "jzxy_grzx.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_photo.html": {
+    "href": "jzxy_photo.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/education3.png",
+      "images/market_nr1.png",
+      "images/myphoto.png",
+      "images/part_time_M_bg.png",
+      "images/jzxy_xtb6.png"
+    ],
+    "refer": [
+      "jzxy_grzx.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_set.html": {
+    "href": "jzxy_set.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/jzxy_xtb7.png",
+      "images/jzxy_xtb23.png",
+      "images/jzxy_xtb24.png",
+      "images/jzxy_xtb6.png"
+    ],
+    "refer": [
+      "jzxy_grzx.html"
+    ],
+    "priority": 0
+  },
+  "jzxy_grzx.html": {
+    "href": "jzxy_grzx.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/grzx_bg.png",
+      "images/grzx_inner.png",
+      "images/grzx_select1.png",
+      "images/jzxy_xtb7.png",
+      "images/grzx_select2.png",
+      "images/grzx_select3.png",
+      "images/grzx_select4.png",
+      "images/grzx_select5.png",
+      "images/jzxy_xtb6.png"
+    ],
+    "refer": [
+      "jzxy_collection.html",
+      "jzxy_message.html",
+      "jzxy_friend.html",
+      "jzxy_photo.html",
+      "jzxy_set.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/jquery-1.11.3.min.js",
+      "images/sidebar_banner.png",
+      "images/jzxy_xtb3.png",
+      "images/dengli2_photo2.png",
+      "images/jzxy_banner.png",
+      "images/jzxy_nr4.png",
+      "images/jzxy_nr5.png",
+      "images/jzxy_znew1.png",
+      "images/jzxy_znew2.png",
+      "images/sidebar1.png",
+      "images/jzxy_xtb7.png",
+      "images/sidebar2.png",
+      "images/sidebar3.png",
+      "images/sidebar5.png",
+      "images/sidebar6.png",
+      "images/jzxy_xtb1.png",
+      "images/jzxy_xtb2.png",
+      "images/jzxy_nr1.png",
+      "images/jzxy_nr2.png",
+      "images/jzxy_nr3.png",
+      "images/jzxy_xtb4.png",
+      "images/jzxy_xtb5.png"
+    ],
+    "refer": [
+      "jzxy_denglu1.html",
+      "jzxy_market.html",
+      "jzxy_part_time_new.html",
+      "jzxy_news.html",
+      "jzxy_newjy.html",
+      "jzxy_micro.html",
+      "jzxy_grzx.html"
+    ],
+    "priority": 0
+  }
+}

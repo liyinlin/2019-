@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        * {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        /* 头部开始 */
+        .wdtss a {
+            color: #000;
+        }
+
+        .top1 {
+            width: 100%;
+            background: #d7e6ff;
+            line-height: 34px;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlf {
+            margin-left: 20px;
+        }
+
+        #titsss span {
+            background: #fff;
+        }
+
+        #titsss span {
+            border-top: #fff;
+            font-weight: normal;
+        }
+
+        #titsss .select {
+            border-top: #fff;
+            font-weight: normal;
+
+        }
+
+        #cons .laws .ulsd li a {
+            display: inline-block;
+            width: 174px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .wdts {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lf {
+            float: left;
+        }
+
+        .lr {
+            float: right;
+        }
+
+        .fouter {
+            height: 161px;
+            background: #2F3133;
+        }
+
+        .fout1 h4 {
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .fout1 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 20px 0;
+        }
+
+        .fout2 h2 {
+            color: #DB2E39;
+            margin-top: 50px;
+        }
+
+        .fout2 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .fout2 a {
+            padding: 5px 10px;
+            border: 1px solid #EFEFEF;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .fout2 a:hover {
+            background: #777878
+        }
+
+        .psd1 {
+            line-height: 25px;
+            font-size: 14px;
+            padding: 15px;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        /* 头尾部结束 */
+        /* 内容 */
+        .bor {
+            border-top: 1px dashed #EFEFEF;
+        }
+
+        .bole {
+            width: 246px;
+            border-bottom: 1px dashed #EFEFEF;
+        }
+
+        .bosd {
+            width: 952px;
+            border-left: 1px dashed #EFEFEF;
+        }
+
+        .lnj {
+            border-bottom: 1px dashed #EFEFEF;
+            padding: 20px;
+        }
+
+        .lnj h3 {
+            color: #DB2E39;
+            font-size: 18px;
+
+        }
+
+        .l210 {
+            width: 226px;
+            margin-left: 20px;
+        }
+
+        .pls {
+            border-bottom: 1px dashed #EFEFEF;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        .pls:hover {
+            color: #DB2E39;
+        }
+
+        .hh13 {
+            text-align: center;
+        }
+
+        .title {
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #EFEFEF;
+            margin-top: 17px;
+        }
+
+        .title h3 {
+            text-align: center;
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+
+        .p16 {
+            font-size: 16px;
+            text-align: right;
+        }
+
+        .cens1 {
+            padding: 25px;
+        }
+
+        .lpsk1 {
+            font-size: 16px;
+            text-align: center;
+            line-height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top1">
+        <div class="wdtss cler">
+            <div class="lf mlks">
+                <img style="width: 12px;" src="img/ff2.png" alt="">
+                <a href="">园区公共服务门户</a> |
+                <a href="">综合管理服务平台</a> |
+                <a href="">非公党建服务平台</a> |
+                <a href="">辅助决策支持平台 </a>
+            </div>
+            <div class="lr mjk">
+                <a href="">帮助中心</a>
+                <a href="" style="margin: 0 10px">登录</a>
+                <a href="" style="background: #D7B758;
+                                border-radius: 3px;
+                                color:#fff;
+                                padding: 5px 10px;">注册</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="wdtss posy">
+        <img src="img/images/wesad_03.jpg" alt="">
+        <div class="poab">
+            <div class="spmsw">
+                <input type="text"><span><img style="width: 28px;" src="img/spou.png" alt=""></span>
+            </div>
+            <p class="lpso">热门产品:<span>产业园</span><span>工业园</span><span>新闻</span></p>
+        </div>
+    </div>
+    <div class="cler wdts">
+        <div class="lr psd1">
+            您当前的位置：<a>首页&gt;</a><span style="color:#D7B758;">产业扶持</span>
+        </div>
+    </div>
+    <div class="wdts bor cler">
+        <div class="lf bole">
+            <div class="lnj">
+                <h3>动态资讯</h3>
+            </div>
+            <div class="l210 clef">
+                <p class="pls">产业扶持</p>
+                <p class="pls">政策法规</p>
+                <p class="pls">资料下载</p>
+                <p>
+                    <img style="margin-top:20px;" src="img/images/o1_03.png" alt="">
+                    <img style="margin-top:20px;" src="img/images/o2_03.png" alt="">
+                </p>
+            </div>
+        </div>
+        <div class="lr bosd">
+            <div class="title">
+                <h3>极大规模集成电路制造装备</h3>
+                <p class="p16">发布日期:2019-03-13</p>
+            </div>
+            <div class="cens1">
+                <p class="lpsk1">投融界讯 随着人们物质生活的日益提高，温饱已不再成为人们关心的主要问题，人们开始追求居住环境的舒适和美化。据报道，家居软装行业的年产值已达数万亿元。</p>
+                <p class="lpsk1">
+                    由于目前我国软装产业链相对来说不是很完整，管理粗放，相对的也没有数量足够多的设计师。所以软装处于前景好、刚起步的状态。面对这样一个巨大的“潜力股”，谁能站在时代的风口上，抓住先机呢？日前，投融界专访了汇果软装共享商城项目的创始人马旭先生。
+                </p>
+                <p class="lpsk1">投融界：您好，能介绍下您创业这个项目的背景吗？</p>
+                <p class="lpsk1">马旭：我从事装饰、地产行业19年，2014年开始专注发展装修后市场，在供应链整合方面有十多年工作经验与上游工厂资源。
+                    多年从业经历，让我深切了解装饰市场从业者扩张转型的需求。项目通过切入家居家装全产业链参与者，将家居产品制造商、品牌代理商及关联的实体大、中、小型企业入驻“汇果宅配”平台。平台量身定制多种营销模式和促销手段，凭借强大的后台管理、数据分析、锁定买家等功能，为商家减少财务、出入库、营销、售后服务等成本，为商家提供一站式营销解决方案，解决获客难、利润低、交付难等行业痛点。
+                </p>
+                <img src="img/images/tj1_03.png" alt="">
+                <p class="lpsk1">马旭：这个平台分为三大板块：一个全新的推广模式、完善的供应链体系、多元化的销售模式。</p>
+                <p class="lpsk1">
+                    项目将开设自有的装饰装修升级类栏目，通过常态化栏目视频来不断的持续获客，大幅降低获客成本，增加客户粘性，快速打造品牌影响力。目前第一期栏目发布就达到了十余万人次的关注，454户家庭参与的流量数据。
+                </p>
+                <p class="lpsk1">供应链方面，项目将引用两大上市地产公司软装集采渠道，同时平台会引进整套软装单品及周边产品商家入驻，并建立自主品牌代加工。</p>
+                <p class="lpsk1">
+                    另外，我们以加盟商为中心，覆盖所在城市的装企、设计师群体及相关各行业销售渠道，达到一个当地庞大的销售体系，一站式解决客户的软装搭配和周边用品选购问题，更能体现我们产品的垂直化，增加复购率，改变传统的销售模式。
+                </p>
+                <!-- <p class="lpsk1"></p> -->
+            </div>
+        </div>
+    </div>
+    <div class="fouter">
+        <div class="wdts cler">
+            <div class="lf fout1">
+                <h4>抚州工业园区公共信息服务平台</h4>
+                <p>指导单位：抚州市工业和信息化委员会 | 主办单位： 抚州市工业与科技创新投资发展有限责任公司 | 运营支持：浪潮软件集团有限公司</p>
+                <p>版权所有：浪潮软件集团有限公司 | 京ICP备 04000001号</p>
+            </div>
+            <div class="lr fout2">
+                <!-- <h2>400-075-2008</h2> -->
+                <p style="margin-top: 50px;">服务时间：工作日 09:00-18:00</p>
+                <a>
+                    联系我们
+                </a>
+                <a style="margin-left:10px;">
+                    关于我们
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

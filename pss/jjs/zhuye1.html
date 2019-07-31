@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+        }
+
+        /* 头部开始 */
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlf {
+            margin-left: 20px;
+        }
+
+        #titsss span {
+            background: #fff;
+        }
+
+        #titsss span {
+            border-top: #fff;
+            font-weight: normal;
+        }
+
+        #titsss .select {
+            border-top: #fff;
+            font-weight: normal;
+
+        }
+
+        #cons .laws .ulsd li a {
+            display: inline-block;
+            width: 174px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .wdts {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lf {
+            float: left;
+        }
+
+        .lr {
+            float: right;
+        }
+
+        .fouter {
+            height: 161px;
+            background: #2F3133;
+        }
+
+        .fout1 h4 {
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .fout1 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 20px 0;
+        }
+
+        .fout2 h2 {
+            color: #DB2E39;
+            margin-top: 50px;
+        }
+
+        .fout2 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .fout2 a {
+            padding: 5px 10px;
+            border: 1px solid #EFEFEF;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .fout2 a:hover {
+            background: #777878
+        }
+
+        /* 头尾部结束 */
+        #klpos {
+            position: relative;
+        }
+
+        .posi {
+            position: absolute;
+            padding: 40px 20px;
+            background: #fff;
+            top: 180px;
+            right: 50px;
+        }
+
+        .posi p {
+            text-align: left;
+            border-bottom: 1px solid #EFEFEF;
+            color: #000;
+            font-weight: 700;
+            color: #000;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+
+        .posi .inp1 {
+            border: 1px solid #EFEFEF;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            /* margin-right: 5px; */
+            margin-top: 15px;
+            width: 300px;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        /* input[type="checkbox"]{
+    -webkit-appearance: none;
+    vertical-align:middle;
+    margin-top:0;
+    background:#fff;
+    border:#999 solid 1px;
+    border-radius: 3px;
+    min-height: 12px;
+    min-width: 12px;
+}
+
+input[type=checkbox]:checked::after{
+    content:'√';
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    background: transparent;
+    border: #fff solid 2px;
+    border-top: none;
+    border-right: none;
+    height: 6px;
+    width: 10px;} */
+        .mt20 {
+            margin-top: 20px;
+        }
+
+        .but {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .but input {
+            border: 0px;
+            cursor: pointer;
+            background: #ec2a28;
+            color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            width: 100%;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+
+        .zhuces {
+            font-weight: 700;
+
+        }
+
+        .as {
+            color: #ec2a28;
+        }
+
+        .mjk {
+            position: absolute;
+            top: 20px;
+            right: 60px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .widts {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .widts .hhs {
+            text-align: center;
+            margin-top:25px;
+        }
+
+        .insd {
+            border: 1px solid #EFEFEF;
+            width: 232px;
+            height: 37px;
+            padding-left: 10px;
+            border-radius: 5px;
+            vertical-align: middle;
+            /* margin-right: 5px; */
+            width: 408px;
+            height: 46px;
+
+        }
+
+        .mk1 .jsd,
+        .mk1 .insd {
+            display: inline-block;
+
+        }
+
+        .mk1 .jsd {
+            line-height: 48px;
+        }
+
+        .fons {
+            font-size: 12px;
+            color: #777878;
+            margin-left: 93px;
+        }
+        .mk1{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        .linid{
+          line-height: 46px;
+        }
+        .linid *{
+            vertical-align: middle;
+        }
+        .fons *{
+            font-size: 12px;
+            vertical-align: middle;
+        }
+        .span *{
+            vertical-align: middle;
+        }
+        .span img{
+            margin-right: 15px;
+            margin-left: 10px;
+        }
+        .fml *{
+            vertical-align: middle;
+        }
+    </style>
+    <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+    <!-- <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script> -->
+</head>
+
+<body>
+    <div class="wdtss posy">
+        <img src="img/images/wesad_03.jpg" alt="">
+        <div class="poab">
+            <div class="spmsw">
+                <input type="text"><span><img style="width: 28px;" src="img/spou.png" alt=""></span>
+            </div>
+            <p class="lpso">热门产品:<span>产业园</span><span>工业园</span><span>新闻</span></p>
+        </div>
+    </div>
+    <div class="widts">
+        <h2 class="hhs">欢迎注册</h2>
+        <div id="disg">
+           账户类型:
+            <span class="span" style="margin-left: 30px;"><img src="img/ll2.jpg" alt="">党员账号</span>
+            <span class="span"><img src="img/ll1.jpg" alt="">企业账号</span>
+            <span class="span"><img src="img/ll1.jpg" alt="">政府账号</span>
+        </div>
+        <div id="con">
+            <div class="mk1 show">
+                <div class="mt20 cler">
+                    <span class="jsd lf">姓<span style="color:#fff;">姓名</span>名:</span>
+                    <input class="inp1 lr insd" type="text">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">身份证号:</span>
+                    <input class="inp1 lr insd" type="text" placeholder="请输入身份证号作为登陆账号">
+                </div>
+                <div class="mt20 cler linid">
+                    <span class="jsd lf">性<span style="color:#fff;">姓名</span>别:</span>
+                    <input style="margin-left: 30px;margin-top: 0px;" type="radio" name="" id=""><span>男</span>
+                    <input type="radio" style="margin-left:15px; margin-top: 0px;" name="" id=""><span>女</span>
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">出生日期:</span>
+                    <input class="inp1 lr insd" type="text">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">党员编号:</span>
+                    <input class="inp1 lr insd" type="text">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">民<span style="color:#fff;">姓名</span>族:</span>
+                    <select style="width: 200px;
+                       height: 46px;
+                       margin-left: 35px;
+                       border: 1px solid #EFEFEF;
+                       border-radius: 5px;">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">联系地址:</span>
+                    <select class="lf" style="width: 200px;
+                   height: 46px;
+                   margin-left: 35px;
+                   border: 1px solid #EFEFEF;
+                   border-radius: 5px;">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <select class="lr" style="width: 200px;
+                      height: 46px;
+                     
+                      border: 1px solid #EFEFEF;
+                      border-radius: 5px;">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">登陆密码:</span>
+                    <input class="inp1 lr insd" type="password" placeholder="设置密码">
+                </div>
+                <div class="cler">
+                    <span class="lr fons">密码须包含有大小写字母、数字、符号中的两种，密码长度为6-20个字符</span>
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">确认密码:</span>
+                    <input class="inp1 lr insd" type="password" placeholder="确认密码">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">手机号码:</span>
+                    <input class="inp1 lr insd" type="text" placeholder="+86 手机号">
+                </div>
+                <div class="mt20 cler">
+                    <div class="am-input-group" style="width: 408px;float: right;">
+                        <input type="text" style="height: 46px;border: 1px solid #EFEFEF;border-radius: 5px;" class="am-form-field">
+                        <span class="am-input-group-btn">
+                            <button class="am-btn am-btn-default" style="height: 46px;border: 1px solid #EFEFEF;"
+                                type="button">获取验证码</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="cler">
+                    <span class="lf fons fml"> <input type="checkbox" style="margin-top: 0px;" name="" id="">
+                        <span>我已认真阅读并同意</span><a style="color:#000;" href="">《用户注册协议》</a>
+                    </span>
+                </div>
+                <div class="mt20 cler">
+                    <div class="but lr" style="margin:0;">
+                        <input style="width: 408px;" type="button" value="立即注册">
+                    </div>
+                </div>
+                <div class="mt20 cler"></div>
+            </div>
+
+            <div class="mk1">
+                <div class="mt20 cler">
+                    <span class="jsd lf">企业名称:</span>
+                    <input class="inp1 lr insd" type="text">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">社会信用代码:</span>
+                    <input class="inp1 lr insd" type="text" placeholder="请填写同意代码">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">机构类型</span>
+                    <select style="width: 200px;
+               height: 46px;
+               margin-left: 35px;
+               border: 1px solid #EFEFEF;
+               border-radius: 5px;">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">企业法人:</span>
+                    <input class="inp1 lr insd" type="text">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">企业注册地址:</span>
+                    <input class="inp1 lr insd" type="text">
+                </div>
+                <div class="mt20 cler">
+                    <span class="jsd lf">企业注册日期:</span>
+                    <input class="inp1 lr insd" type="text">
+                </div>
+                <div class="mt20 cler">
+                    <div class="mt20 cler">
+                        <span class="jsd lf">登陆密码:</span>
+                        <input class="inp1 lr insd" type="password" placeholder="设置密码">
+                    </div>
+                    <div class="cler">
+                        <span class="lr fons ">密码须包含有大小写字母、数字、符号中的两种，密码长度为6-20个字符</span>
+                    </div>
+                    <div class="mt20 cler">
+                        <span class="jsd lf">确认密码:</span>
+                        <input class="inp1 lr insd" type="password" placeholder="确认密码">
+                    </div>
+                    <div class="mt20 cler">
+                        <span class="jsd lf">手机号码:</span>
+                        <input class="inp1 lr insd" type="text" placeholder="+86 手机号">
+                    </div>
+                    <div class="mt20 cler">
+                        <div class="am-input-group" style="width: 408px;float: right;">
+                            <input type="text" style="height: 46px;border: 1px solid #EFEFEF;" class="am-form-field">
+                            <span class="am-input-group-btn">
+                                <button class="am-btn am-btn-default" style="height: 46px;border: 1px solid #EFEFEF;"
+                                    type="button">获取验证码</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cler">
+                        <span class="lf fons fml"> <input type="checkbox" style="margin-top: 0px;"  name="" id="">
+                            <span>我已认真阅读并同意<a style="color:#000;" href="">《用户注册协议》</a></span></span>
+                    </div>
+                    <div class="mt20 cler">
+                        <div class="but lr" style="margin:0;">
+                            <input style="width: 408px;" type="button" value="立即注册">
+                        </div>
+                    </div>
+                    <div class="mt20 cler"></div>
+                </div>
+            </div> 
+            <div class="mk1 hide">
+                    <div class="mt20 cler">
+                        <span class="jsd lf">政府名称:</span>
+                        <input class="inp1 lr insd" type="text">
+                    </div>
+                    <div class="mt20 cler">
+                        <span class="jsd lf">联系地址:</span>
+                        <select class="lf" style="width: 200px;
+                   height: 46px;
+                   margin-left: 35px;
+                   border: 1px solid #EFEFEF;
+                   border-radius: 5px;">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <select class="lr" style="width: 200px;
+                      height: 46px;
+                     
+                      border: 1px solid #EFEFEF;
+                      border-radius: 5px;">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="mt20 cler">
+                        <span class="jsd lf">登陆密码:</span>
+                        <input class="inp1 lr insd" type="password" placeholder="设置密码">
+                    </div>
+                    <div class="cler">
+                        <span class="lr fons">密码须包含有大小写字母、数字、符号中的两种，密码长度为6-20个字符</span>
+                    </div>
+                    <div class="mt20 cler">
+                        <span class="jsd lf">确认密码:</span>
+                        <input class="inp1 lr insd" type="password" placeholder="确认密码">
+                    </div>
+                    <div class="mt20 cler">
+                        <span class="jsd lf">手机号码:</span>
+                        <input class="inp1 lr insd" type="text" placeholder="+86 手机号">
+                    </div>
+                    <div class="mt20 cler">
+                        <div class="am-input-group" style="width: 408px;float: right;">
+                            <input type="text" style="height: 46px;border: 1px solid #EFEFEF;" class="am-form-field">
+                            <span class="am-input-group-btn">
+                                <button class="am-btn am-btn-default" style="height: 46px;border: 1px solid #EFEFEF;"
+                                    type="button">获取验证码</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cler">
+                        <span class="lf fons fml"> <input type="checkbox" style="margin-top: 0px;"  name="" id="">
+                           <span>我已认真阅读并同意<a style="color:#000;" href="">《用户注册协议》</a></span>
+                            </span>
+                    </div>
+                    <div class="mt20 cler">
+                        <div class="but lr" style="margin:0;">
+                            <input style="width: 408px;" type="button" value="立即注册">
+                        </div>
+                    </div>
+                    <div class="mt20 cler"></div>
+                </div>
+        </div>
+    </div>
+    <div class="fouter " style="margin-top:200px;">
+        <div class="wdts">
+            <div class="lf fout1">
+                <h4>抚州工业园区公共信息服务平台</h4>
+                <p>指导单位：抚州市工业和信息化委员会 | 主办单位： 抚州市工业与科技创新投资发展有限责任公司 | 运营支持：浪潮软件集团有限公司</p>
+                <p>版权所有：浪潮软件集团有限公司 | 京ICP备 04000001号</p>
+            </div>
+            <div class="lr fout2">
+                <!-- <h2>400-075-2008</h2> -->
+                <p style="margin-top: 50px;">服务时间：工作日 09:00-18:00</p>
+                <a>
+                    联系我们
+                </a>
+                <a style="margin-left:10px;">
+                    关于我们
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $('#disg .span').click(function () {
+        var i = $(this).index();//下标第一种写法
+        //var i = $('tit').index(this);//下标第二种写法
+        console.log(i);
+        $(this).addClass('select').siblings().removeClass('select');
+        $('#disg img').attr('src','img/ll1.jpg');
+        $('#disg img').eq(i).attr('src','img/ll2.jpg');
+        $('#con .mk1').eq(i).show().siblings().hide();
+    });
+</script>
+
+</html>

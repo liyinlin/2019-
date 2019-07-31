@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        /* 头部开始 */
+        .wdtss a {
+            color: #000;
+        }
+
+        .top1 {
+            width: 100%;
+            background: #d7e6ff;
+            line-height: 34px;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlf {
+            margin-left: 20px;
+        }
+
+        #titsss span {
+            background: #fff;
+        }
+
+        #titsss span {
+            border-top: #fff;
+            font-weight: normal;
+        }
+
+        #titsss .select {
+            border-top: #fff;
+            font-weight: normal;
+
+        }
+
+        #cons .laws .ulsd li a {
+            display: inline-block;
+            width: 174px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .wdts {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lf {
+            float: left;
+        }
+
+        .lr {
+            float: right;
+        }
+
+        .fouter {
+            height: 161px;
+            background: #2F3133;
+        }
+
+        .fout1 h4 {
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .fout1 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 20px 0;
+        }
+
+        .fout2 h2 {
+            color: #DB2E39;
+            margin-top: 50px;
+        }
+
+        .fout2 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .fout2 a {
+            padding: 5px 10px;
+            border: 1px solid #EFEFEF;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .fout2 a:hover {
+            background: #777878
+        }
+
+        .psd1 {
+            line-height: 25px;
+            font-size: 14px;
+            padding: 15px;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        /* 头尾部结束 */
+        .news1 {
+            padding: 25px 0;
+            overflow: hidden;
+            border-bottom: 2px solid #EFEFEF;
+        }
+
+        .l580 {
+            width: 655px;
+        }
+
+        .tils h3 {
+            /* margin: 15px 0; */
+            font-size: 16px;
+            margin-bottom: 13px;
+        }
+
+        .fenx {
+            line-height: 20px;
+        }
+
+        .fenx img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .fenx span {
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .plcen {
+            margin-top: 10px;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            line-height: 28px;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            display: -webkit-box;
+            display: box;
+            position: relative;
+            color: #838383;
+        }
+
+        .l143 img {
+            width: 143px;
+            height: 93px;
+        }
+
+        .tecs {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .fo1 {
+            width: 350px;
+            display: inline-block;
+        }
+
+        .fo1 li {
+            border: 1px solid #838383;
+            color: #838383;
+            float: left;
+            padding: 7px 10px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .l364 {
+            width: 350px;
+            border-left: 1px solid #EFEFEF;
+            padding-left: 15px;
+
+        }
+
+        .l29 {
+            width: 315px;
+            /* padding: 15px;
+    border: 2px solid #EFEFEF;
+    /* margin-top: 39px; */
+            /* height: 486px; */
+            border-bottom: 2px solid #EFEFEF;
+        }
+
+        .hh3 {
+            font-size: 18px;
+            /* color: #838383; */
+            margin-bottom: 16px;
+        }
+
+        .ml {
+            margin-left: 5px;
+        }
+
+        .l16 {
+            background: #DB2E39;
+            color: #fff;
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            margin-top: 5px;
+        }
+
+        .l235 {
+            width: 290px;
+            color: #838383;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        .l29 .cler {
+            margin-bottom: 25px;
+        }
+
+        .hh3 {
+            display: inline-block;
+        }
+
+        .hh3 * {
+            vertical-align: middle;
+        }
+
+        .foms {
+            font-size: 20px;
+        }
+
+        .m1sd {
+            display: inline-block;
+            color: #838383;
+            margin-left: 15px;
+        }
+
+        .mt25 {
+            margin-top: 25px;
+
+        }
+
+        .bord {
+            border: 0px;
+        }
+        .w100{
+            color: #464646;
+            /* width: 100%; */
+            padding: 15px;
+            font-size: 14px;
+            background: #EFEFEF;
+            cursor: pointer;
+        }
+        .w100:hover{
+            background: #EDAA00;
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top1">
+        <div class="wdtss cler">
+            <div class="lf mlks">
+                <img style="width: 12px;" src="img/ff2.png" alt="">
+                <a href="">园区公共服务门户</a> |
+                <a href="">综合管理服务平台</a> |
+                <a href="">非公党建服务平台</a> |
+                <a href="">辅助决策支持平台 </a>
+            </div>
+            <div class="lr mjk">
+                <a href="">帮助中心</a>
+                <a href="" style="margin: 0 10px">登录</a>
+                <a href="" style="background: #D7B758;
+                                        border-radius: 3px;
+                                        color:#fff;
+                                        padding: 5px 10px;">注册</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="wdtss posy">
+        <img src="img/images/wesad_03.jpg" alt="">
+        <div class="poab">
+            <div class="spmsw">
+                <input type="text"><span><img style="width: 28px;" src="img/spou.png" alt=""></span>
+            </div>
+            <p class="lpso">热门产品:<span>产业园</span><span>工业园</span><span>新闻</span></p>
+        </div>
+    </div>
+    <div class="cler wdts">
+        <div class="lr psd1">
+            您当前的位置：<a>首页&gt;</a><span style="color:#D7B758;">政策法规</span>
+        </div>
+    </div>
+    <div class="wdts cler">
+        <div class="lf">
+            <img src="img/images/vv1_03.png" alt="">
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/x1_03.png" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">从“三个全省第一”看南昌的民生账本</h3>
+                                <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                        src="img/cz.png" alt=""><span>1008</span> <a href=""></a>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                4日，南昌市发布2018年上半年财政收入情况。据悉，2018年上半年，南昌市财政总收入完成510.4亿元
+                                比去年提前一个月突破500亿大关，财政总收入、地方一般公共预算收入和支出三项增幅实现了“三个全
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/h2_03.png" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">21名网媒记者编辑看南昌生态建设</h3>
+                                <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                        src="img/cz.png" alt=""><span>1008</span> <a href=""></a>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                今天起，由中央网信办、生态环境部主办，长江经济带沿线11省市网信办承办的2018“美丽中国长江行 ——共舞长江经济带·生态篇”网络主题活动(江西站)在南昌启动。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/h3_03.png" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">抚州市都市圈发展规划编制调研座谈会举行</h3>
+                                <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                        src="img/cz.png" alt=""><span>1008</span> <a href=""></a>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                会上，刘苍牧介绍了我市经济社会发展情况。他指出，今年以来，在省委、省政府的坚强领导下，我市按 照“科学发展、绿色崛起，全面建成小康新抚州”目标
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/h5_03.png" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">让“绿色出行”成为一种习惯</h3>
+                                <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                        src="img/cz.png" alt=""><span>1008</span> <a href=""></a>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                眼下，随着人们生活水平的大幅提高，汽车进入寻常百姓家，但“开车出行”也常常会遇到道路拥堵、 污染环境等问题
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/h6_03.png" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">抚州市“五级调解”助力乡村治理</h3>
+                                <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                        src="img/cz.png" alt=""><span>1008</span> <a href=""></a>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                与群众心交心，把群众当亲人，化解矛盾以情动人……今年以来，市发改委驻崇仁县马鞍镇郭家村“连心” 小分队干部全力开展“四进四联四帮”活动
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news1">
+                <div class="lf l143 ">
+                    <img src="img/images/x1_03.png" alt="">
+                </div>
+                <div class="lr l580">
+                    <div class="cler mato">
+                        <div class="lr tils">
+                            <div class="cler">
+                                <h3 class="lf">城上村：校具托起致富梦</h3>
+                                <p class="fenx lr"><img src="img/sj.png" alt=""><span>2018-06-21</span><img
+                                        src="img/cz.png" alt=""><span>1008</span> <a href=""></a>
+                                </p>
+                            </div>
+                            <p class="plcen">
+                                素有“全国校具基地”美誉的株良镇，具有规模以上校具生产加工企业300余家，年销售额达48亿，占全 国校具市场份额的30%以上，居全国四大校具基地之首。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tecs">
+                <ol class="cler fo1">
+                    <li>上一页</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>下一页</li>
+                </ol>
+            </div>
+        </div>
+        <div class="lr l364">
+            <div class="l29">
+                <div>
+                    <h3 class="hh3"><img src="img/images/q1_03.png" alt=""> <span class="ml foms">排行</span></h3><span
+                        class="m1sd"> paihang (24小时)</span>
+                </div>
+                <div class="cler">
+                    <div class="l16 lf">
+                        1
+                    </div>
+                    <div class="lr l235">
+                        成都天府新区2018年度面向社会
+                        公开招聘实业单位
+                    </div>
+                </div>
+                <div class="cler">
+                    <div class="l16 lf" style="background:#EDAB00;">
+                        2
+                    </div>
+                    <div class="lr l235">
+                        抚州市新区地税筹备组
+                    </div>
+                </div>
+                <div class="cler">
+                    <div class="l16 lf" style="background:#F46A00;">
+                        3
+                    </div>
+                    <div class="lr l235">
+                        抚州市管委会社会事业局、双流县
+                        民政局公告
+                    </div>
+                </div>
+                <div class="cler">
+                    <div class="l16 lf" style="background:#515151;">
+                        4
+                    </div>
+                    <div class="lr l235">
+                        四川大学华西医院院长李伟民一
+                        行赴新区参观考察
+                    </div>
+                </div>
+                <div class="cler">
+                    <div class="l16 lf" style="background:#515151;">
+                        5
+                    </div>
+                    <div class="lr l235">
+                        四川大学华西医院院长李伟民一
+                        行赴新区参观考察
+                    </div>
+                </div>
+                <div class="cler">
+                    <div class="l16 lf" style="background:#515151;">
+                        6
+                    </div>
+                    <div class="lr l235">
+                        四川大学华西医院院长李伟民一
+                        行赴新区参观考察
+                    </div>
+                </div>
+                <div class="cler">
+                    <div class="l16 lf" style="background:#515151;">
+                        7
+                    </div>
+                    <div class="lr l235">
+                        四川大学华西医院院长李伟民一
+                        行赴新区参观考察
+                    </div>
+                </div>
+            </div>
+            <div class="l29 mt25 bord " style="width:350px;">
+                <div class="cler" style="margin-bottom:0px;">
+                    <h3 class="hh3 lf"><img src="img/images/q1_03.png" alt=""> <span class="ml lf foms">排行</span></h3>
+                    <span class="m1sd lf"> paihang (24小时)</span>
+                    <a class="m1sd lr">MORE></a>
+                </div>
+                <div style="margin-bottom:10px;">
+                    <p class="w100">
+                            高端智库建设作为中国特色新型智库建设
+                    </p>
+                    <div class="cler" style="margin-bottom:0px; margin-top: 15px;">
+                        <p class="lf" style="color:#A0A0A0;">来源：345frt</p>
+                        <p class="fenx lr"><img src="img/cz.png" alt=""><span style="color:#A0A0A0;">1008</span> <a href=""></a>
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-bottom:10px;">
+                        <p class="w100">
+                                关于印发下一代互联网的相关数据
+                        </p>
+                        <div class="cler" style="margin-bottom:0px; margin-top: 15px;">
+                            <p class="lf" style="color:#A0A0A0;">来源：345frt</p>
+                            <p class="fenx lr"><img src="img/cz.png" alt=""><span style="color:#A0A0A0;">1008</span> <a href=""></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:10px;">
+                            <p class="w100">
+                                    中国特色新型智库建设，是推进国家治理体系
+                            </p>
+                            <div class="cler" style="margin-bottom:0px; margin-top: 15px;">
+                                <p class="lf" style="color:#A0A0A0;">来源：345frt</p>
+                                <p class="fenx lr"><img src="img/cz.png" alt=""><span style="color:#A0A0A0;">1008</span> <a href=""></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div style="margin-bottom:10px;">
+                                <p class="w100">
+                                        关于印发下一代互联网的相关数据
+                                </p>
+                                <div class="cler" style="margin-bottom:0px; margin-top: 15px;">
+                                    <p class="lf" style="color:#A0A0A0;">来源：345frt</p>
+                                    <p class="fenx lr"><img src="img/cz.png" alt=""><span style="color:#A0A0A0;">1008</span> <a href=""></a>
+                                    </p>
+                                </div>
+                            </div> 
+            </div>
+        </div>
+    </div>
+    <div class="fouter">
+        <div class="wdts cler">
+            <div class="lf fout1">
+                <h4>抚州工业园区公共信息服务平台</h4>
+                <p>指导单位：抚州市工业和信息化委员会 | 主办单位： 抚州市工业与科技创新投资发展有限责任公司 | 运营支持：浪潮软件集团有限公司</p>
+                <p>版权所有：浪潮软件集团有限公司 | 京ICP备 04000001号</p>
+            </div>
+            <div class="lr fout2">
+                <!-- <h2>400-075-2008</h2> -->
+                <p style="margin-top: 50px;">服务时间：工作日 09:00-18:00</p>
+                <a>
+                    联系我们
+                </a>
+                <a style="margin-left:10px;">
+                    关于我们
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%;position: relative;}
+		html{font-size: 100px;}
+		.news_all{padding-bottom: 0.15rem;position: absolute;width: 100%;}
+		.news_header{width: 92.5%;margin: 0 auto;height: 0.68rem;position: relative;}
+		.news_header p{font-size: 0.34rem;color:white;line-height: 0.68rem;text-align: center;}
+		.news_header_L{float: left;display: block;}
+		.news_header_L img{width: 0.42rem;height: 0.26rem;display: block;margin: 0.21rem 0;}
+		.news_header_R{float: right;display: block;}
+		.news_header_R img{width: 0.28rem;height: 0.29rem;display: block;margin:0.195rem 0;}
+		#news_fir_xz{width: 100%;overflow: hidden;}
+		#news_fir_xz li{width: 20%;font-size: 0.24rem;color: #727272;text-align: center;padding:0.15rem 0;float: left;list-style: none;border-bottom: 0.05rem solid white;}
+		#news_fir_xz .news_fir_xzC{border-bottom: 0.05rem solid #4c93eb;}
+		#news_fir_xs section{display: none;width: 6.4rem;height: 3.32rem;position: relative;}
+		#news_fir_xs .news_fir_xsC{display: block;}
+		.news_banner{width:6.4rem;overflow:hidden;margin: 0 auto 0;height: 3.32rem;position: relative;}
+		.news_banner img{width: 6.4rem;height: 3.32rem;display: block;float: left;}
+		.news_banner_inner{width: 38.4rem;overflow:hidden;}
+		.news_banner_black{position: absolute;background-color: black;opacity: 0.5;width: 100%;bottom: 0rem;height: 0.5rem;z-index: 1;}
+		#news_banner_point{overflow: hidden;position: absolute;bottom: 0rem;height: 0.5rem;z-index: 2;right: 0.5rem;}
+		#news_banner_point div{float: left;width: 0.14rem;height: 0.14rem;border-radius: 50%;background: #ffffff;margin: 0.18rem;}
+		#news_banner_point .news_banner_pointc{background-color: #4c93eb;}
+		.jzxy_sy_thi{width: 96%;margin: 0.2rem auto 0;}
+		.jzxy_sy_thi div{float: left;}
+		.jzxy_sy_thi li{overflow: hidden;padding: 0.1rem 0;border-bottom: 0.01rem solid#dedede;}
+		.jzxy_sy_thi img{width: 1.7rem;height: 1.27rem;}
+		.jzxy_sy_thi_p1{font-size: 0.24rem;color: #333333;}
+		.jzxy_sy_thi_p2{font-size: 0.16rem;color: #9a9a9a;}
+		.jzxy_sy_thi_R{width: 4.2rem;margin-left: 0.2rem;}
+		.jzxy_sy_thi_p3{overflow: hidden;height: 0.2rem;float: right;overflow: hidden;margin-top: 0.1rem;}
+		.jzxy_sy_thi_p3_span{font-size: 0.14rem;color: #666666;display: block;float: left;line-height: 0.2rem;}
+		.jzxy_sy_thi .jzxy_sy_thi_p3_img1{width: 0.2rem;height: 0.19rem;display: block;float: left;}
+		.jzxy_sy_thi .jzxy_sy_thi_p3_img2{width: 0.25rem;height: 0.2rem;display: block;float: left;margin-left: 0.3rem;}
+	</style>
+</head>
+<body>
+	<div class="news_all">
+		<div style="width:100%;height:0.68rem;background-color:#4c93eb;padding:0.1rem 0;">
+			<div class="news_header">
+				<p>
+					校园新闻
+					<a href="index.html" class="news_header_L" id="sb">
+						<img src="images/jzxy_xtb1.png" alt="">
+					</a>
+					<a href="sscript:;" class="news_header_R">
+						<img src="images/jzxy_xtb10.png" alt="">
+					</a>
+				</p>
+			</div>	
+		</div>
+		<ul id="news_fir_xz">
+			<li class="news_fir_xzC">头条</li>
+			<li>娱乐</li>
+			<li>学习</li>
+			<li>交友</li>
+			<li>活动</li>
+		</ul>
+		<div id="news_fir_xs">
+			<section class="news_fir_xsC">
+				<div class="news_banner">
+					<div class="news_banner_inner">
+						<img src="images/jzxy_banner.png" alt="">
+						<img src="images/new_banner.png" alt="">
+						<img src="images/jzxy_banner.png" alt="">
+						<img src="images/new_banner.png" alt="">
+					</div>
+				</div>
+				<ul class="jzxy_sy_thi"> 
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew3.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div id="news_banner_point">
+					<div class="news_banner_pointc"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="news_banner_black">
+					
+				</div>
+			</section>
+			<section>
+				<ul class="jzxy_sy_thi"> 
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew3.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew3.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<ul class="jzxy_sy_thi"> 
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew3.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew3.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<ul class="jzxy_sy_thi"> 
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew3.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education4.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew3.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<ul class="jzxy_sy_thi"> 
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/education1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_news_M.html">
+							<div>
+								<img src="images/jzxy_znew1.png" alt="">
+							</div>
+							<div class="jzxy_sy_thi_R">
+								<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+								<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+								<p class="jzxy_sy_thi_p3">
+									<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+									<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+									<span class="jzxy_sy_thi_p3_span">105</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
+	<script>
+		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+
+		var imw=$('.news_banner_inner img').eq(0).width();
+		var asd=0;
+		var tim=null;
+		var l=true;
+		function begin(){
+			asd++;
+			if(asd>=4){
+				asd=0;
+			}
+			$('.news_banner').stop().animate({scrollLeft:imw*asd})
+			$('#news_banner_point div').eq(asd).addClass('news_banner_pointc').siblings().removeClass('news_banner_pointc');
+		}
+		tim=setInterval(begin,2500)
+		function left(){
+			clearInterval(tim)
+			asd++;
+			if (asd>3) {
+				asd=0;
+			}
+			$('.news_banner').stop().animate({scrollLeft:imw*asd})
+			$('#news_banner_point div').eq(asd).addClass('news_banner_pointc').siblings().removeClass('news_banner_pointc');
+		}
+		function right(){
+			clearInterval(tim)
+			asd--;
+			if (asd<0) {
+				asd=3;
+			}
+			$('.news_banner').stop().animate({scrollLeft:imw*asd})
+			$('#news_banner_point div').eq(asd).addClass('news_banner_pointc').siblings().removeClass('news_banner_pointc');
+		}
+		var $stX,$stY,move=false;
+		$(".news_banner")[0].addEventListener("touchstart",function(event){
+			event.preventDefault();
+			var touch=event.changedTouches[0];
+			$stX=touch.pageX;
+			$stY=touch.pageY;
+			move=false;
+			clearInterval(tim);
+		},false)
+		$(".news_banner")[0].addEventListener("touchmove",function(event){
+			event.preventDefault();
+			move = true;
+		},false);
+		$(".news_banner")[0].addEventListener("touchend",function(event){
+				event.preventDefault();
+				var touch=event.changedTouches[0];
+				var $endX=touch.pageX;
+				var $endY=touch.pageY;
+				if (move==false) {
+					return;
+				}
+				if($stX - $endX > 0){
+					clearInterval(tim);
+					left();
+					tim=setInterval(begin,2500);
+				}else{
+					clearInterval(tim);
+					right();
+					tim=setInterval(begin,2500);
+				}
+			},false)
+
+		var news_fir_xz=document.getElementById('news_fir_xz').getElementsByTagName('li');
+		var news_fir_xs=document.getElementById('news_fir_xs').getElementsByTagName('section');
+
+			for(var i=0; i<news_fir_xz.length; i++){
+				news_fir_xz[i].onclick=function(){
+					for(var j=0; j<news_fir_xs.length; j++){
+						if (news_fir_xz[j]==this) {
+							news_fir_xz[j].className='news_fir_xzC';
+							news_fir_xs[j].className='news_fir_xsC';
+						}else{
+							news_fir_xz[j].className='';
+							news_fir_xs[j].className='';
+						}
+					}
+				}
+			}
+	</script>

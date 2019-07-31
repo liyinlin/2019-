@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%}
+		html{font-size: 100px;}
+		.collection_all{padding-bottom: 0.15rem;}
+		.collection_header{width: 92.5%;margin: 0 auto;height: 0.68rem;position: relative;}
+		.collection_header p{font-size: 0.34rem;color:white;line-height: 0.68rem;text-align: center;}
+		.collection_header_L{float: left;display: block;}
+		.collection_header_L img{width: 0.18rem;height: 0.33rem;display: block;margin: 0.175rem 0;}
+		.collection_fir_L{margin: 0.1rem 0 0 0.1rem;}
+		.collection_fir_L img{width: 1.7rem;height: 1.17rem;display: block;}
+		.collection_fir_p1{font-size: 0.24rem;color: #000000;}
+		.collection_fir_p2{font-size: 0.2rem;color: #ff6600;margin-top: 0.15rem;}
+		.collection_fir_p2{overflow: hidden;}
+		.collection_fir_p3{margin-top: 0.2rem;}
+		.collection_fir_p3 img{width: 0.2rem;height: 0.2rem;display: block;float: left;}
+		.collection_fir_p3 span{font-size: 0.16rem;color: #9a9a9a;display: block;float: left;line-height: 0.16rem;margin-top: 0.02rem;margin-left: 0.2rem;}
+		.collection_fir li{overflow: hidden;border: 0.01rem solid #e1e1e1;padding: 0.1rem 0 0.2rem 0;}
+		.collection_fir div{float: left;}
+		.collection_fir_R{width: 4.2rem;margin-left: 0.2rem;}
+		.collection_fir{width: 6.26rem;margin: 0.2rem auto 0;}
+	</style>
+</head>
+<body>
+	<div class="collection_all">
+		<div style="width:100%;height:0.68rem;background-color:#4c93eb;padding:0.1rem 0;">
+			<div class="collection_header">
+				<p>
+					我的收藏
+					<a href="jzxy_grzx.html" class="collection_header_L">
+						<img src="images/jzxy_xtb6.png" alt="">
+					</a>
+				</p>
+			</div>	
+		</div>
+		<ul class="collection_fir">
+			<li>
+				<a href="">
+					<div class="collection_fir_L">
+						<img src="images/education1.png" alt="">
+					</div>
+					<div class="collection_fir_R">
+						<p class="collection_fir_p1">
+							托福TPO 新东方老师细讲
+						</p>
+						<p class="collection_fir_p2">
+							￥299
+						</p>
+						<p class="collection_fir_p3">
+							<img src="images/jzxy_xtb17.png" alt="">
+							<span>共计6课时</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="collection_fir_L">
+						<img src="images/market_nr.png" alt="">
+					</div>
+					<div class="collection_fir_R">
+						<p class="collection_fir_p1">
+							托福TPO 新东方老师细讲
+						</p>
+						<p class="collection_fir_p2">
+							￥299
+						</p>
+						<p class="collection_fir_p3">
+							<img src="images/jzxy_xtb17.png" alt="">
+							<span>共计6课时</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="collection_fir_L">
+						<img src="images/jzxy_znew2.png" alt="">
+					</div>
+					<div class="collection_fir_R">
+						<p class="collection_fir_p1">
+							托福TPO 新东方老师细讲
+						</p>
+						<p class="collection_fir_p2">
+							￥299
+						</p>
+						<p class="collection_fir_p3">
+							<img src="images/jzxy_xtb17.png" alt="">
+							<span>共计6课时</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="collection_fir_L">
+						<img src="images/jzxy_znew3.png" alt="">
+					</div>
+					<div class="collection_fir_R">
+						<p class="collection_fir_p1">
+							托福TPO 新东方老师细讲
+						</p>
+						<p class="collection_fir_p2">
+							￥299
+						</p>
+						<p class="collection_fir_p3">
+							<img src="images/jzxy_xtb17.png" alt="">
+							<span>共计6课时</span>
+						</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+	<script>
+ 		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+ 	</script>

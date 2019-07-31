@@ -1,0 +1,325 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%;position: relative;overflow: scroll;}
+		html{font-size: 100px;width: 100%;overflow: scroll;}
+		.jzxy_sy_all{padding-bottom: 0.15rem;width: 6.4rem;float: left;}
+		.jzxy_sy_header{width: 92.5%;margin: 0 auto;height: 0.68rem;position: relative;}
+		.jzxy_sy_header p{font-size: 0.34rem;color:white;line-height: 0.68rem;text-align: center;}
+		.jzxy_sy_header_L{float: left;display: block;}
+		.jzxy_sy_header_L img{width: 0.42rem;height: 0.26rem;display: block;margin: 0.21rem 0;}
+		.jzxy_sy_header_R{float: right;display: block;}
+		.jzxy_sy_header_R img{width: 0.35rem;height: 0.33rem;display: block;margin:0.175rem 0;}
+		.jzxy_sy_banner{width:100%;overflow: hidden;margin: 0.15rem auto 0;}
+		.jzxy_sy_banner img{width: 6.4rem;height: 3.32rem;display: block;float: left;}
+		.jzxy_sy_banner_inner{width: 32rem;overflow:hidden;}
+		.jzxy_sy_fir{width: 96%;overflow: hidden;margin: 0.15rem auto 0;}
+		.jzxy_sy_fir a{display: block;}
+		.jzxy_sy_fir li{overflow: hidden;}
+		.jzxy_sy_fir_1l_le{float: left;width:3.03rem;height: 2.23rem;}
+		.jzxy_sy_fir_1l_ri{float:right;width:3.03rem;height: 2.23rem;}
+		.jzxy_sy_fir_1l_le img{width:3.03rem;height:2.23rem;display: block;}
+		.jzxy_sy_fir_1l_ri img{width:3.03rem;height: 1.09rem;display: block;}
+		.jzxy_sy_fir_2l{overflow: hidden;margin-top: 0.09rem;}
+		.jzxy_sy_fir_2l img{width: 3.03rem;height: 1.09rem;display: block;}
+		.jzxy_sy_sec{width: 96%;margin: 0.5rem auto 0;overflow: hidden;padding: 0.1rem 0;border-bottom: 0.01rem solid#dedede;}
+		.jzxy_sy_sec img{width: 0.25rem;height: 0.28rem;display: block;float: left;margin-top: 0.01rem;margin-left: 0.15rem;}
+		.jzxy_sy_sec span{display: block;float: left;color: #9a9a9a;font-size: 0.3rem;line-height: 0.3rem;margin-left: 0.1rem;}
+		.jzxy_sy_thi{width: 96%;margin: 0.2rem auto 0;}
+		.jzxy_sy_thi div{float: left;}
+		.jzxy_sy_thi li{overflow: hidden;padding: 0.1rem 0;border-bottom: 0.01rem solid#dedede;}
+		.jzxy_sy_thi img{width: 1.7rem;height: 1.27rem;}
+		.jzxy_sy_thi_p1{font-size: 0.24rem;color: #333333;}
+		.jzxy_sy_thi_p2{font-size: 0.16rem;color: #9a9a9a;}
+		.jzxy_sy_thi_R{width: 4.2rem;margin-left: 0.2rem;}
+		.jzxy_sy_thi_p3{overflow: hidden;height: 0.2rem;float: right;overflow: hidden;margin-top: 0.1rem;}
+		.jzxy_sy_thi_p3_span{font-size: 0.14rem;color: #666666;display: block;float: left;line-height: 0.2rem;}
+		.jzxy_sy_thi .jzxy_sy_thi_p3_img1{width: 0.2rem;height: 0.19rem;display: block;float: left;}
+		.jzxy_sy_thi .jzxy_sy_thi_p3_img2{width: 0.25rem;height: 0.2rem;display: block;float: left;margin-left: 0.3rem;}
+		#sidebar{width: 4rem;height: 100%;background-color:white;float: left;}
+		.sidebar_fir li{overflow: hidden;height: 0.60rem;padding: 0.17rem;border-bottom: 0.01rem solid #f4f4f4;}
+		.sidebar_fir span{font-size: 0.3rem;color: #666666;display: block;float: left;line-height: 0.3rem;margin-top: 0.15rem;margin-left: 0.4rem}
+		.grzx_first_img1{width:0.60rem;height: 0.60rem;display: block;float: left;}
+		.grzx_first_img2{width:0.21rem;height: 0.28rem;display: block;float: right;margin-top: 0.195rem;}
+		.sidebar_sec{width: 4rem;height:2rem;background:url(images/sidebar_banner.png) 0 0 no-repeat;}
+		.sidebar_sec img{width: 1.15rem;height:1.15rem;display: block;float: left;margin-top: 0.425rem;margin-left: 0.25rem;}
+		.sidebar_sec a{display: block;font-size: 0.3rem;color: white;float: left;line-height: 0.3rem;margin-top: 0.85rem;margin-left: 0.3rem;}
+		.sidebar_fir a{display: block;}
+		@-webkit-keyframes sb1{
+			from{margin-left: -4rem;}to{margin-left: 0}
+		}
+		@-webkit-keyframes sb2{
+			from{margin-left: 0}to{margin-left: -4rem;}
+		}
+		#little{width: 50rem;overflow: hidden;margin-left: -4rem}
+		#big{width: 6.4rem;overflow: hidden;}
+	</style>
+</head>
+<body>
+	<div id="big">
+		<div id="little">
+			<div id="sidebar">
+				<div class="sidebar_sec">
+					<img src="images/dengli2_photo2.png" alt="">
+					<a href="jzxy_denglu1.html">请登录</a>
+				</div>
+				<ul class="sidebar_fir">
+					<li>
+						<a href="jzxy_news.html">
+							<img src="images/sidebar1.png" alt="" class="grzx_first_img1">
+							<span>校园新闻</span>
+							<img src="images/jzxy_xtb7.png" alt="" class="grzx_first_img2">
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_newjy.html">
+							<img src="images/sidebar2.png" alt="" class="grzx_first_img1">
+							<span>教育培训</span>
+							<img src="images/jzxy_xtb7.png" alt="" class="grzx_first_img2">
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_micro.html">
+							<img src="images/sidebar3.png" alt="" class="grzx_first_img1">
+							<span>微圈子</span>
+							<img src="images/jzxy_xtb7.png" alt="" class="grzx_first_img2">
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_market.html">
+							<img src="images/sidebar5.png" alt="" class="grzx_first_img1">
+							<span>跳蚤市场</span>
+							<img src="images/jzxy_xtb7.png" alt="" class="grzx_first_img2">
+						</a>
+					</li>
+					<li>
+						<a href="jzxy_part_time_new.html">
+							<img src="images/sidebar6.png" alt="" class="grzx_first_img1">
+							<span>兼职吧</span>
+							<img src="images/jzxy_xtb7.png" alt="" class="grzx_first_img2">
+						</a>
+					</li>
+					<li style="margin-top:0.2rem;border:0;">
+						<a href="jzxy_grzx.html">
+							<img src="images/sidebar6.png" alt="" class="grzx_first_img1">
+							<span>个人中心</span>
+							<img src="images/jzxy_xtb7.png" alt="" class="grzx_first_img2">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="jzxy_sy_all" id="all">
+				<div style="width:100%;height:0.68rem;background-color:#4c93eb;padding:0.1rem 0;">
+					<div class="jzxy_sy_header">
+						<p>
+							叽喳校园
+							<span class="jzxy_sy_header_L" id="sb">
+								<img src="images/jzxy_xtb1.png" alt="">
+							</span>
+							<a href="jzxy_denglu1.html" class="jzxy_sy_header_R">
+								<img src="images/jzxy_xtb2.png" alt="">
+							</a>
+						</p>
+					</div>	
+				</div>
+				<div class="jzxy_sy_banner">
+					<div class="jzxy_sy_banner_inner">
+						<img src="images/jzxy_banner.png" alt="">
+						<img src="images/jzxy_banner.png" alt="">
+						<img src="images/jzxy_banner.png" alt="">
+						<img src="images/jzxy_banner.png" alt="">
+						<img src="images/jzxy_banner.png" alt="">
+					</div>
+				</div>
+				<ul class="jzxy_sy_fir">
+					<li>
+						<div class="jzxy_sy_fir_1l_le">
+							<a href="jzxy_news.html">
+								<img src="images/jzxy_nr1.png" alt="">
+							</a>
+						</div>
+						<div class="jzxy_sy_fir_1l_ri">
+							<a href="jzxy_newjy.html">
+								<img src="images/jzxy_nr2.png" alt="">
+							</a>
+							<a href="jzxy_micro.html">
+								<img src="images/jzxy_nr3.png" alt="" style="margin-top:0.05rem;">
+							</a>
+						</div>
+					</li>
+					<li class="jzxy_sy_fir_2l">
+						<a href="jzxy_market.html">
+							<img src="images/jzxy_nr4.png" alt="" style="float:left;">
+						</a>
+						<a href="jzxy_part_time_new.html">
+							<img src="images/jzxy_nr5.png" alt="" style="float:right;">
+						</a>
+					</li>
+				</ul>
+				<div class="jzxy_sy_sec">
+					<img src="images/jzxy_xtb3.png" alt="">
+					<span>最新</span>
+				</div>
+				<ul class="jzxy_sy_thi"> 
+					<li>
+						<div>
+							<img src="images/jzxy_znew1.png" alt="">
+						</div>
+						<div class="jzxy_sy_thi_R">
+							<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+							<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+							<p class="jzxy_sy_thi_p3">
+								<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+								<span class="jzxy_sy_thi_p3_span">105</span>
+								<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+								<span class="jzxy_sy_thi_p3_span">105</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/jzxy_znew2.png" alt="">
+						</div>
+						<div class="jzxy_sy_thi_R">
+							<p class="jzxy_sy_thi_p1">奔跑吧青年</p>
+							<p class="jzxy_sy_thi_p2">当你还在纠结要不要做设计，当你还在苦恼为什么自己怀才不遇，当你还不曾思考我该做什么.......</p>
+							<p class="jzxy_sy_thi_p3">
+								<img src="images/jzxy_xtb4.png" alt="" class="jzxy_sy_thi_p3_img1">
+								<span class="jzxy_sy_thi_p3_span">105</span>
+								<img src="images/jzxy_xtb5.png" alt="" class="jzxy_sy_thi_p3_img2">
+								<span class="jzxy_sy_thi_p3_span">105</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+	<script>
+		var $pd=true;
+		$('#sb')[0].addEventListener("touchend",function(event){
+			event.preventDefault();
+			if ($pd) {
+				$('#little').css({'-webkit-animation':'sb1 0.5s 0s','-webkit-animation-fill-mode':'forwards'})
+				$pd=false;
+				}
+			else{
+				$('#little').css({'-webkit-animation':'sb2 0.5s 0s','-webkit-animation-fill-mode':'forwards'})
+				$pd=true;
+			}
+		},false)
+
+
+		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+			console.log(width);
+		}
+
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+		var imw=$('.jzxy_sy_banner_inner img').eq(0).width();
+		console.log(imw);
+		var asd=0;
+		var tim=null;
+		var l=true;
+		function begin(){
+			asd++;
+			if(asd>=5){
+				asd=0;
+			}
+			$('.jzxy_sy_banner').stop().animate({scrollLeft:imw*asd})
+		}
+		tim=setInterval(begin,2500);
+		function left(){
+			clearInterval(tim)
+			asd++;
+			if (asd>4) {
+				asd=0;
+			}
+			$('.jzxy_sy_banner').stop().animate({scrollLeft:imw*asd})
+		}
+		function right(){
+			clearInterval(tim)
+			asd--;
+			if (asd<0) {
+				asd=4;
+			}
+			$('.jzxy_sy_banner').stop().animate({scrollLeft:imw*asd})
+		}
+		var $stX,$stY,move=false;
+		$(".jzxy_sy_banner_inner")[0].addEventListener("touchstart",function(event){
+			event.stopPropagation();
+			var touch=event.changedTouches[0];
+			$stX=touch.pageX;
+			$stY=touch.pageY;
+			move=false;
+			clearInterval(tim);
+		},false)
+		$(".jzxy_sy_banner_inner")[0].addEventListener("touchmove",function(event){
+			event.preventDefault();
+			event.stopPropagation();
+			move = true;
+		},false);
+		$(".jzxy_sy_banner_inner")[0].addEventListener("touchend",function(event){
+				event.stopPropagation();
+				var touch=event.changedTouches[0];
+				var $endX=touch.pageX;
+				var $endY=touch.pageY;
+				if (move==false) {
+					return;
+				}
+				if($stX - $endX > 0){
+					clearInterval(tim);
+					left();
+					tim=setInterval(begin,2500);
+				}else{
+					clearInterval(tim);
+					right();
+					tim=setInterval(begin,2500);
+				}
+			},false)
+
+
+		$("html")[0].addEventListener("touchstart",function(event){
+			var touch=event.changedTouches[0];
+			$stX=touch.pageX;
+			$stY=touch.pageY;
+			move=false;
+		},false)
+		$("html")[0].addEventListener("touchmove",function(event){
+			// if (event.target.tagName != 'A'){
+			// 	event.preventDefault();
+			// }
+			move = true;
+		},false);
+		$("html")[0].addEventListener("touchend",function(event){
+			var touch=event.changedTouches[0];
+			var $endX=touch.pageX;
+			var $endY=touch.pageY;
+			if (move==false) {
+				return;
+			}
+			if($stX - $endX > 1&&$pd!=true){
+				$('#little').css({'-webkit-animation':'sb2 0.5s 0s','-webkit-animation-fill-mode':'forwards'})
+				$pd=true;
+			}else if($stX - $endX < -100){
+				$('#little').css({'-webkit-animation':'sb1 0.5s 0s','-webkit-animation-fill-mode':'forwards'})
+				$pd=false;
+			}
+		},false)
+	</script>

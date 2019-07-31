@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%;background-color: #4c93eb;}
+		html{font-size: 100px;}
+		.denglu1_first img{width:1.82rem;height: 1.82rem;display: block;margin: 1.1rem auto 0;}
+		.denglu1_second{width: 100%;position: relative;margin-top: 1.05rem;}
+		.denglu1_second input{width: 3.56rem;height: 0.8rem;padding-left: 1rem;display: block;margin: 0 auto;outline: none;border-radius: 0.05rem;background-color: #79aef0;;border: none;}
+		.denglu1_all .denglu1_second input:nth-child(1){border-bottom: 0.02rem solid #9bc2f4;}
+		.denglu1_second input::-webkit-input-placeholder{color: white;font-size: 0.23rem;}
+		.denglu1_second input:-moz-placeholder{color: white;font-size: 0.23rem;}
+		.denglu1_second input::-moz-placeholder{color: white;font-size: 0.23rem;}
+		.denglu1_second input:-ms-placeholder{color: white;font-size: 0.23rem;}
+		#denglu1_input_img1{display: block;position: absolute;top:0.24rem;left: 1.22rem}
+		#denglu1_input_img1 img{width: 0.42rem;height: 0.32rem;display: block;}
+		#denglu1_input_img2{display: block;position: absolute;top: 0.99rem;left: 1.22rem}
+		#denglu1_input_img2 img{width: 0.36rem;height: 0.42rem;display: block;}
+		.denglu1_third{width: 4.56rem;height: 0.8rem;font-size: 0.38rem;line-height: 0.8rem;color: white;text-align: center;background-color: #f3b045;border-radius: 0.05rem;margin: 0.6rem auto 0;}
+		.denglu1_fourth{width: 4.36rem;margin:0.3rem auto 0;overflow: hidden;padding: 0 0.1rem;}
+		.denglu1_fourth_l{color: white;font-size: 0.24rem;display: block;float: left;}
+		.denglu1_fourth_r{color: white;font-size: 0.24rem;display: block;float: right;}
+		.denglu1_fiveth{width: 5rem;margin: 1.6rem auto 0;height: 0.02rem;background-color: #c1daf8;}
+		.denglu1_sixth{font-size: 0.24rem;color: white;padding: 0.1rem;display: block;margin: 0 auto;width: 2.12rem;margin-top: -0.28rem;background-color: #4c93eb;}
+	</style>
+</head>
+<body>
+	<div class="denglu1_all">
+		<div class="denglu1_first">
+			<img src="images/dengli1_photo.png" alt="">
+		</div>
+		<div class="denglu1_second">
+			<input type="text" placeholder="E-mail address" id="number">
+			<input type="text" placeholder="********" id="password">
+			<span id="denglu1_input_img1">
+				<img src="images/jzxy_xtb8.png" alt="">
+			</span>
+			<span id="denglu1_input_img2">
+				<img src="images/jzxy_xtb9.png" alt="">
+			</span>
+		</div>
+		<div class="denglu1_third" id="login">
+			login
+		</div>
+		<div class="denglu1_fourth">
+			<a href="" class="denglu1_fourth_l">忘记密码</a>
+			<a href="" class="denglu1_fourth_r">注册账号</a>
+		</div>
+		<div class="denglu1_fiveth">
+			
+		</div>
+		<span class="denglu1_sixth">社交账号一键登录</span>
+	</div>
+</body>
+</html>
+	<script>
+		var number=document.getElementById('number');
+		var password=document.getElementById('password');
+		var login=document.getElementById('login');
+		var  yx=/^\w+\@\w+\.[a-z]+$/;
+		var sjh=/^[1][3-5|7-8]\d{9}$/;
+		var bhc=2;
+		var tim=null;
+
+			login.onclick=function(){
+				if (yx.test(number.value)||password.value!='') {
+					tim=setInterval(function(){
+						bhc--;
+						if (bhc<0) {
+							alert('登录成功，点击关闭返回首页');
+							window.location.href='index.html'
+						}
+					},1000)
+				}
+				else{
+					alert('请正确输入邮箱密码');
+				}
+				
+			}
+
+
+		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+	</script>

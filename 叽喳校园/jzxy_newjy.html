@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%}
+		html{font-size: 100px;}
+		.newjy_all{padding-bottom: 0.15rem;}
+		.newjy_header{width: 92.5%;margin: 0 auto;height: 0.68rem;position: relative;}
+		.newjy_header p{font-size: 0.34rem;color:white;line-height: 0.68rem;text-align: center;}
+		.newjy_header_L{float: left;display: block;}
+		.newjy_header_L img{width: 0.42rem;height: 0.26rem;display: block;margin: 0.21rem 0;}
+		.newjy_header_R{float: right;display: block;}
+		.newjy_header_R img{width: 0.28rem;height: 0.29rem;display: block;margin:0.195rem 0;}
+		.newjy_banner img{width: 6.4rem;height: 3.3rem;}
+		.newjy_fir{width: 6.22rem;margin: 0 auto;overflow: hidden;}
+		.newjy_fir img{width: 0.24rem;height: 0.3rem;display: block;float: left;}
+		.newjy_fir span{display: block;color: #9a9a9a;font-size: 0.3rem;line-height: 0.3rem;margin-left: 0.5rem;}
+		.newjy_sec{width: 6.22rem;overflow: hidden;margin: 0 auto;}
+		.newjy_sec li{float: left;width: 3rem;border: 0.01rem solid #dedede;padding-bottom: 0.1rem;margin: 0.15rem 0.035rem;}
+		.newjy_sec img{width: 3rem;height: 1.78rem;display: block;}
+		.newjy_sec_p1{font-size: 0.24rem;color: 333333;overflow: hidden;padding-left: 0.15rem;margin-top: 0.05rem}
+		.newjy_sec_p2{overflow: hidden;padding: 0 0.1rem;margin-top: 0.05rem}
+		.newjy_sec_p2 em{display: block;float: left;font-size: 0.2rem;color: #ff6600;font-style: normal;}
+		.newjy_sec_p2 i{display: block;float: right;font-size: 0.2rem;color: #9a9a9a;font-style: normal;}
+	</style>
+</head>
+<body>
+	<div class="newjy_all">
+		<div style="width:100%;height:0.68rem;background-color:#4c93eb;padding:0.1rem 0;">
+			<div class="newjy_header">
+				<p>
+					教育培训
+					<a href="index.html" class="newjy_header_L">
+						<img src="images/jzxy_xtb1.png" alt="">
+					</a>
+					<a href="script:;" class="newjy_header_R">
+						<img src="images/jzxy_xtb10.png" alt="">
+					</a>
+				</p>
+			</div>	
+		</div>
+		<div class="newjy_banner">
+			<img src="images/new_education_bg.png" alt="">
+		</div>
+		<div class="newjy_fir">
+			<img src="images/jzxy_xtb16.png" alt="">
+			<span>热门课程</span>
+		</div>
+		<ul class="newjy_sec">
+			<li>
+				<a href="jzxy_education.html">
+					<img src="images/newjy_nr2.png" alt="">
+					<p class="newjy_sec_p1">四大高薪行业晋级班</p>
+					<p class="newjy_sec_p2">
+						<em>￥299</em>
+						<i>共计5课时</i>
+					</p>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_education.html">
+					<img src="images/newjy_nr1.png" alt="">
+					<p class="newjy_sec_p1">四大高薪行业晋级班</p>
+					<p class="newjy_sec_p2">
+						<em>￥299</em>
+						<i>共计5课时</i>
+					</p>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_education.html">
+					<img src="images/newjy_nr3.png" alt="">
+					<p class="newjy_sec_p1">四大高薪行业晋级班</p>
+					<p class="newjy_sec_p2">
+						<em>￥299</em>
+						<i>共计5课时</i>
+					</p>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_education.html">
+					<img src="images/newjy_nr4.png" alt="">
+					<p class="newjy_sec_p1">四大高薪行业晋级班</p>
+					<p class="newjy_sec_p2">
+						<em>￥299</em>
+						<i>共计5课时</i>
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+	<script>
+ 		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+ 	</script>

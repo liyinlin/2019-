@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        * {
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        /* 头部开始 */
+        .wdtss a {
+            color: #000;
+        }
+
+        .top1 {
+            width: 100%;
+            background: #d7e6ff;
+            line-height: 34px;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlks * {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .posy {
+            position: relative;
+        }
+
+        .poab {
+            position: absolute;
+            right: 0;
+            top: 39px;
+        }
+
+        .poab input {
+            border: 2px solid #D7B758;
+            width: 232px;
+            height: 37px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .spmsw span {
+            background: #D7B758;
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 5px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .lpso {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .lpso span {
+            color: #ccc;
+            margin-left: 5px;
+        }
+
+        .mjk a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mlf {
+            margin-left: 20px;
+        }
+
+        #titsss span {
+            background: #fff;
+        }
+
+        #titsss span {
+            border-top: #fff;
+            font-weight: normal;
+        }
+
+        #titsss .select {
+            border-top: #fff;
+            font-weight: normal;
+
+        }
+
+        #cons .laws .ulsd li a {
+            display: inline-block;
+            width: 174px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .wdtss {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .wdts {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .lf {
+            float: left;
+        }
+
+        .lr {
+            float: right;
+        }
+
+        .fouter {
+            height: 161px;
+            background: #2F3133;
+        }
+
+        .fout1 h4 {
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .fout1 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 20px 0;
+        }
+
+        .fout2 h2 {
+            color: #DB2E39;
+            margin-top: 50px;
+        }
+
+        .fout2 p {
+            color: #6E6F6F;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .fout2 a {
+            padding: 5px 10px;
+            border: 1px solid #EFEFEF;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .fout2 a:hover {
+            background: #777878
+        }
+
+        .psd1 {
+            line-height: 25px;
+            font-size: 14px;
+            padding: 15px;
+        }
+
+        .psd1 span {
+            font-size: 14px;
+        }
+
+        /* 头尾部结束 */
+        /* 中间布局 */
+        .l881 {
+            width: 827px;
+            padding-bottom: 25px;
+        }
+
+        /* 开始 */
+        .title {
+            padding-bottom: 15px;
+            border-bottom: 2px solid #EFEFEF;
+
+        }
+
+        .title h3 {
+            text-align: center;
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+
+        .p16 {
+            font-size: 16px;
+        }
+
+        .cencon {
+            margin: 35px 0;
+        }
+
+        .ps11 {
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        .ten {
+            text-indent: 32px;
+        }
+
+        .l338 {
+            width: 338px;
+            border: 1px solid #939393;
+            background: #FAFAFA;
+        }
+
+        .l338 h3 {
+            font-size: 18px;
+            padding: 10px;
+            background: #EFEFEF;
+            border-bottom: 1px solid #939393;
+
+        }
+
+        .l14s {
+            padding: 10px 0;
+        }
+
+        .l14s li {
+            padding: 10px;
+        }
+
+        .l14s,
+        .l14s a {
+            font-size: 14px;
+        }
+
+        .l14s a {
+            color: #464646;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top1">
+        <div class="wdtss cler">
+            <div class="lf mlks">
+                <img style="width: 12px;" src="img/ff2.png" alt="">
+                <a href="">园区公共服务门户</a> |
+                <a href="">综合管理服务平台</a> |
+                <a href="">非公党建服务平台</a> |
+                <a href="">辅助决策支持平台 </a>
+            </div>
+            <div class="lr mjk">
+                <a href="">帮助中心</a>
+                <a href="" style="margin: 0 10px">登录</a>
+                <a href="" style="background: #D7B758;
+                        border-radius: 3px;
+                        color:#fff;
+                        padding: 5px 10px;">注册</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="wdtss posy">
+        <img src="img/images/wesad_03.jpg" alt="">
+        <div class="poab">
+            <div class="spmsw">
+                <input type="text"><span><img style="width: 28px;" src="img/spou.png" alt=""></span>
+            </div>
+            <p class="lpso">热门产品:<span>产业园</span><span>工业园</span><span>新闻</span></p>
+        </div>
+    </div>
+    <div class="cler wdts">
+        <p class="lr psd1">
+            您当前的位置：<a>首页&gt;</a><a>产业智库&gt;</a><span style="color:#D7B758;">产业聚集</span>
+        </p>
+    </div>
+    <div class="wdts cler">
+        <div class="l881 lf">
+            <div class="title">
+                <h3>2018-2023年中国智慧医疗建设行业</h3>
+                <h3>市场调查及投资前景分析报告</h3>
+                <p class="p16">发布日期:2019-03-13</p>
+            </div>
+            <div class="cencon">
+                <img src="img/images/ti2_03.png" alt="">
+            </div>
+            <div class="cons">
+                <p class="ps11">
+                    未来租赁市场的格局将会演变为一线城市是主战场，二线城市迎大繁荣。按城市结构看，未来一线城市的租赁市场规模占比将保持稳定且占据超过全国四分之一的份额，二线城市份额占比将快速提升。由于一线城市对于人口规模的控制，未来租赁人口的增长有限，其租赁市场份额占比稳定在较高水平更多是由于其租金水平的提升。二线城市则受到租赁人口快速增长及租金水平上涨的双重影响，其租赁市场的份额将在未来10年内快速提升，直至与一线城市齐头并进。对于在一二线城市有着较强「根基」的房企来说，这将有利于他们形成先发优势。
+                </p>
+                <p class="ps11 ten">
+                    长租公寓的产业流程大致分为获取房源、设计装修、营销签约、日常运营管理、后期项目退出五个基本环节。整个产业链可以分为上游物业资产，中游长租公寓运营商和服务商、下游租客三个基本环节，大数据系统作为产业链的连接环节起到重要的信息传递和收集作用。长租公寓产业链条中的盈利点包括物业资本升值或房租溢价、设计装修、附加服务、系统平台和网络信息平台、租约证券化和租赁金融服务等众多领域，房企可根据自身企业特点与优势从中寻觅机会。
+                </p>
+                <p class="ps11 ten">乡村振兴：房企推进特色小镇建设的契机</p>
+                <p class="ps11 ten">
+                    2018年是决胜全面建成小康社会的关键年，高层对扶贫的重视可以说达到了前所未有的程度。另外，精准脱贫「攻坚战」作为乡村振兴战略的前提，成为今年地方政府报告的重点议题。特色小镇与乡村振兴有着密切联系，房企也可通过特色小镇建设在推进乡村振兴与精准扶贫中发挥自身优势。
+                </p>
+                <p class="ps11 ten">
+                    截止201年12月底，TOP100房企涉足小镇比例达6成，共签约项目已超过150个，明确提出小镇计划的房企已有20多家，华夏幸福、蓝城、绿城落地项目已超10个。由于文旅产业的进入门槛较低，超过六成的房企小镇以文旅为产业主题。
+                </p>
+                <p class="ps11 ten">
+                    在特色小镇的布局策略上，房企形成了优先选择本地化布局和基于一二线城市周边三四线城市开展拓展的模式。在小镇的具体区位上，多数位于二线以下城市。这也和贫困地区的分布区域相吻合。房企看好小镇源于政策红利可缓解长期发展所必须的土地、资金痛点，其在小镇项目上的布局有两大策略，以华侨城、碧桂园、蓝城等的聚焦某一类产业，如旅游、科技、农业；以华夏幸福等为代表的，通过产业链思维，打造主题产业小镇，例如机器人小镇等。
+                </p>
+                <p class="ps11 ten">
+                    鉴于乡村多拥有良好的自然环境与田园风光，房企在把特色小镇建设与乡村振兴、精准扶贫相结合时可选择以文旅小镇作为切入点。文旅小镇雏型为传统旅游地产，以景区资源为卖点，配合配套住宅共同开发。因主题内容灵活，文旅类小镇为当前各地政府及企业打造特色小镇的主流模式。文旅小镇的盈利模式主要包括四个方面：文旅收入、地产销售租赁收入、特色产业收入、投资金融收入，房企可根据自身优势与特点寻求机会。
+                </p>
+                <p class="ps11 ten">乡村振兴：房企推进特色小镇建设的契机
+                    　　2018年是决胜全面建成小康社会的关键年，高层对扶贫的重视可以说达到了前所未有的程度。另外，精准脱贫「攻坚战」作为乡村振兴战略的前提，成为今年地方政府报告的重点议题。特色小镇与乡村振兴有着密切联系，房企也可通过特色小镇建设在推进乡村振兴与精准扶贫中发挥自身优势。
+                    　　产业链思维，打造主题产业小镇，例如机器人小镇等。
+                    　可根据自身优势与特点寻求机会。</p>
+                <!-- <p class="ps11 ten"></p>
+                <p class="ps11 ten"></p> -->
+            </div>
+        </div>
+        <div class="lr">
+
+        
+        <div class="l338">
+            <div>
+                <h3>同类文章</h3>
+                <ul class="l14s">
+                    <li>
+                        <a href="">
+                            <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                            关于印发下一代互联网的相关数据重大项目
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                            关于做好和高级重大项目2018年启动新一批
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                            关于申报2018年度中国电子学会废弃电器电
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                            关于申报新一批废弃电器电子产品电器电子产
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                            关于〞核心电子器件、高端通用芯片“电器电
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                            关于申报新一批废弃电器电子产品高端通用芯
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                            关于〞核心电子器件、高端通用芯片“
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        <div class="l338" style="margin-top:25px;">
+                <div>
+                    <h3>最新发布</h3>
+                    <ul class="l14s">
+                        <li>
+                            <a href="">
+                                <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                                关于印发下一代互联网的相关数据重大项目
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                                关于做好和高级重大项目2018年启动新一批
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                                关于申报2018年度中国电子学会废弃电器电
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="color:#4E4E4E;margin-right: 10px;">●</span>
+                                关于申报新一批废弃电器电子产品电器电子产
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                
+                
+            </div>
+    </div>
+    </div>
+    <div class="fouter">
+        <div class="wdts cler">
+            <div class="lf fout1">
+                <h4>抚州工业园区公共信息服务平台</h4>
+                <p>指导单位：抚州市工业和信息化委员会 | 主办单位： 抚州市工业与科技创新投资发展有限责任公司 | 运营支持：浪潮软件集团有限公司</p>
+                <p>版权所有：浪潮软件集团有限公司 | 京ICP备 04000001号</p>
+            </div>
+            <div class="lr fout2">
+                <!-- <h2>400-075-2008</h2> -->
+                <p style="margin-top: 50px;">服务时间：工作日 09:00-18:00</p>
+                <a>
+                    联系我们
+                </a>
+                <a style="margin-left:10px;">
+                    关于我们
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

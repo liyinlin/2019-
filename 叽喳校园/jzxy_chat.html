@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%;position: relative;}
+		html{font-size: 100px;}
+		.char_all{padding-bottom: 0.15rem;}
+		.char_header{width: 92.5%;margin: 0 auto;height: 0.68rem;position: relative;}
+		.char_header p{font-size: 0.34rem;color:white;line-height: 0.68rem;text-align: center;}
+		.char_header_L{float: left;display: block;}
+		.char_header_L img{width: 0.18rem;height: 0.33rem;display: block;margin: 0.175rem 0;}
+		.chat_nr_L{overflow: hidden;padding: 0.1rem;}
+		.chat_nr_L img{display: block;float: left;width: 0.71rem;height: 0.71rem;}
+		.chat_nr_L div{font-size: 0.24rem;color: #333333;padding:0.15rem 0.2rem;border: 0.01rem solid #d9d9d9;border-radius: 0.05rem;float: left;margin-left: 0.5rem;position: relative;max-width: 3.8rem;background-color: #f7f7f5;}
+		.chat_nr_L div:after{content: '';border-right: 0.15rem solid #f7f7f5;border-bottom: 0.075rem solid  transparent;border-top: 0.075rem solid  transparent;position: absolute;left: -0.13rem;top: 0.23rem;}
+		.chat_nr_L div:before{content: '';border-right: 0.15rem solid #d9d9d9;border-bottom: 0.075rem solid  transparent;border-top: 0.075rem solid  transparent;position: absolute;left: -0.15rem;top: 0.23rem;}
+		.chat_nr_R{overflow: hidden;padding: 0.1rem;}
+		.chat_nr_R img{display: block;float:right;width: 0.71rem;height: 0.71rem;}
+		.chat_nr_R div{font-size: 0.24rem;color: #333333;padding:0.15rem 0.2rem;border: 0.01rem solid #d9d9d9;border-radius: 0.05rem;float: right;margin-right: 0.5rem;position: relative;max-width: 3.8rem;background-color: #f7f7f5;}
+		.chat_nr_R div:after{content: '';border-left: 0.15rem solid #f7f7f5;border-bottom: 0.075rem solid  transparent;border-top: 0.075rem solid  transparent;position: absolute;right: -0.13rem;top: 0.23rem;}
+		.chat_nr_R div:before{content: '';border-left: 0.15rem solid #d9d9d9;border-bottom: 0.075rem solid  transparent;border-top: 0.075rem solid  transparent;position: absolute;right: -0.15rem;top: 0.23rem;}
+		#chat_nr li{margin-top: 0.15rem;}
+		#chat_nr{height: 9.2rem;overflow: scroll;scroll:hidden;}
+		.chat_last{width: 100%;height: 0.9rem;background-color: #f5f5f5;position:fixed;bottom: 0;z-index: 1;}
+		.chat_last input{width: 3.14rem;height: 0.44rem;display: block;float: left;border-radius: 0.22rem;margin-top: 0.23rem;margin-left: 0.15rem;padding-left: 0.8rem;outline: none;}
+		.chat_last span{position: absolute;left: 0.3rem;top: 0.31rem;}
+		.chat_last span img{width: 0.3rem;height: 0.28rem;display: block;}
+		.chat_last_img{width: 0.47rem;height: 0.47rem;display: block;float: left;margin-top: 0.215rem;margin-left: 0.2rem;}
+	</style>
+</head>
+<body>
+	<div class="chat_all">
+		<div style="width:100%;height:0.68rem;background-color:#4c93eb;padding:0.1rem 0;">
+			<div class="char_header">
+				<p>
+					微圈子
+					<a href="jzxy_message.html" class="char_header_L">
+						<img src="images/jzxy_xtb6.png" alt="">
+					</a>
+				</p>
+			</div>	
+		</div>
+		<ul id="chat_nr">
+			<li class="chat_nr_L">
+				<img src="images/Micro1.png" alt="">
+				<div>这里好热闹啊</div>
+			</li>
+			<li class="chat_nr_L">
+				<img src="images/Micro2.png" alt="">
+				<div>谁看过了，这个电影到底讲的是个什么，好看吗？</div>
+			</li>
+			<li class="chat_nr_R">
+				<img src="images/Micro3.png" alt="">
+				<div>挺好看的，结局超完美</div>
+			</li>
+			<li class="chat_nr_L">
+				<img src="images/Micro3.png" alt="">
+				<div>挺好看的，结局超完美</div>
+			</li>
+			<li class="chat_nr_R">
+				<img src="images/Micro3.png" alt="">
+				<div>你们说的什么东东</div>
+			</li>
+			<li class="chat_nr_L">
+				<img src="images/Micro3.png" alt="">
+				<div>这里好热闹哇哇</div>
+			</li>
+			<li class="chat_nr_R">
+				<img src="images/Micro3.png" alt="">
+				<div>谁看过了，这个电影到底讲的是个什么，好看吗？</div>
+			</li>
+		</ul>
+		<div class="chat_last">
+			<input type="text" placeholder="快来吐槽，小伙伴行动起来">
+			<span>
+				<img src="images/jzxy_xtb22.png" alt="">
+			</span>
+			<img src="images/jzxy_xtb30.png" alt="" class="chat_last_img">
+			<img src="images/jzxy_xtb31.png" alt="" class="chat_last_img">
+		</div>
+	</div>
+</body>
+</html>
+	<script>
+ 		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+ 	</script>

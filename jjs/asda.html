@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .fileOne{
+            display: block;
+            position: relative;
+            width: 70px;
+            height: 20px;
+            overflow: hidden;
+            border: .1px solid #666;
+            background: none repeat scroll 0 0 #e5e5e5;
+            color: black;
+            cursor: pointer;
+            text-align: center;
+            text-decoration:none;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .fileOne span{
+            display: block;
+            line-height: 20px;
+        }
+
+        .fileTwo{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 20px;
+            font-size: 100px; /* 增大不同浏览器的可点击区域 */
+            opacity: 0; /* 实现的关键点 */
+            filter:alpha(opacity=0);/* 兼容IE */
+        }
+    </style>
+</head>
+<body>
+    <a class="fileOne" href="#">
+        <span>选择照片</span>
+        <input class="fileTwo"  type="file">
+    </a>
+</body>
+</html>

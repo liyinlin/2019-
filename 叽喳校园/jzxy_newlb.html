@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-family: "微软雅黑";}
+		html,body{width: 100%;height: 100%}
+		html{font-size: 100px;}
+		.jzxy_sy_all{padding-bottom: 0.15rem;}
+		.jzxy_sy_header{width: 92.5%;margin: 0 auto;height: 0.68rem;position: relative;}
+		.jzxy_sy_header p{font-size: 0.34rem;color:white;line-height: 0.68rem;text-align: center;}
+		.jzxy_sy_header_L{float: left;display: block;}
+		.jzxy_sy_header_L img{width: 0.18rem;height: 0.33rem;display: block;margin: 0.175rem 0;}
+		.jzxy_sy_header_R{float: right;display: block;}
+		.jzxy_sy_header_R img{width: 0.35rem;height: 0.33rem;display: block;margin:0.175rem 0;}
+		.newlb_fir{width: 6.18rem;margin: 0 auto;background-color: white;overflow: hidden;padding: 0.2rem 0;}
+		.newlb_fir input{display: block;float: left;}
+		.newlb_fir input:nth-child(1){width: 4.28rem;height: 0.54rem;padding-left: 0.2rem;border: 0.01rem solid #e1e1e1;}
+		.newlb_fir span:nth-child(2){display: block;float: left;;width: 1.02rem;height: 0.52rem;background-color: #4c93eb;border-radius: 0.05rem;overflow: hidden;padding: 0 0.2rem;margin-top: 0.02rem;margin-left: 0.1rem;}
+		.newlb_fir span img{width: 0.28rem;height: 0.29rem;display: block;float: left;margin-top: 0.115rem;}
+		.newlb_fir span i{font-size: 0.24rem;color: white;display: block;float: left;font-style: normal;line-height: 0.24rem;height: 0.24rem;margin-top: 0.14rem;margin-left: 0.2rem;}
+		.newlb_sec{width: 6.18rem;margin: 0 auto;}
+		.newlb_sec li{overflow: hidden;margin-top: 0.15rem;}
+		.newlb_sec div{float: left;}
+		.newlb_sec img{width: 1.7rem;height: 1.17rem;display: block;}
+		.newlb_sec_R{position: relative;margin-left: 0.15rem;width: 4.2rem;height: 1.17rem;}
+		.newlb_sec_R_p1{font-size: 0.24rem;color: #333333;margin-top: 0.07rem;}
+		.newlb_sec_R_p2{font-size: 0.16rem;color: #9a9a9a;margin-top: 0.15rem;padding-left: 0.3rem;position: relative;line-height: 0.2rem;}
+		.newlb_sec_R_p3{font-size: 0.16rem;color: #9a9a9a;padding-left: 0.3rem;position: relative;margin-top: 0.15rem;line-height: 0.2rem;}
+		.newlb_sec_R_p4{position: absolute;top: 0.05rem;right: 0;display: block;}
+		.newlb_sec_R_p4 span{font-size: 0.2rem;color: #bababa;display: block;float: left;}
+		.newlb_sec_R_p4 em{font-size: 0.2rem;color: #ff6600;font-style: normal;display: block;float: left;}
+		.newlb_sec_R_p2 img{width: 0.18rem;height: 0.18rem;display: block;position: absolute;left: 0;top:0.01rem;}
+		.newlb_sec_R_p3 img{width: 0.16rem;height: 0.19rem;display: block;position: absolute;left: 0;top:0.005rem;}
+	</style>
+</head>
+<body>
+	<div class="newlb_all">
+		<div style="width:100%;height:0.68rem;background-color:#4c93eb;padding:0.1rem 0;">
+			<div class="jzxy_sy_header">
+				<p>
+					列表
+					<a href="jzxy_part_time_new.html" class="jzxy_sy_header_L">
+						<img src="images/jzxy_xtb6.png" alt="">
+					</a>
+				</p>
+			</div>	
+		</div>
+		<div style="width:100%;background-color:#f6f6f6;">
+			<div class="newlb_fir">
+				<input type="text" placeholder="搜索你想要的">
+				<span>
+					<img src="images/jzxy_xtb10.png" alt="">
+					<i>搜索</i>
+				</span>
+			</div>
+		</div>
+		<ul class="newlb_sec">
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew3.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew4.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew1.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew2.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew3.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew4.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew1.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="jzxy_part_time_M.html">
+					<div>
+						<img src="images/jzxy_znew2.png" alt="">
+					</div>
+					<div class="newlb_sec_R">
+						<p class="newlb_sec_R_p1">服务员专场面试会</p>
+						<p class="newlb_sec_R_p2">
+							面试时间10月8日10:00-16:00
+							<img src="images/jzxy_xtb11.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p3">
+							面试地点石景山总工会2层博看文思
+							<img src="images/jzxy_xtb12.png" alt="">
+						</p>
+						<p class="newlb_sec_R_p4">
+							<em>￥200</em><span>/天</span>
+						</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+	<script>
+		var html=document.getElementsByTagName('html')[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onresize=function(){
+			setTimeout(function(){
+				html.style.fontSize=getFontSize()+'px';
+			},100)
+		}
+	</script>
